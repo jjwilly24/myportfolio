@@ -1,0 +1,258 @@
+body {
+    font-family:sans-serif;
+    font-size: 1.2em;
+}
+.list{
+   text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+.list a{
+    font-size: 1em;
+    border: 1px blue solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+.imgRow,.columnA,.columnB,.columnC {
+  box-sizing: border-box;
+}
+.imgRow{width: 100%;max-width: 1250px;margin-left: auto;margin-right: auto;overflow: hidden;padding: 5px;}
+/* Create two equal columns that floats next to each other */
+.columnA {
+  float: left;
+  width: 40%;
+  padding: 10px;
+height: 180px;
+}
+.columnB {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 180px;
+}
+.columnC {
+  float: left;
+  width: 40%;
+  padding: 10px;
+ height: 180px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.columnB img{
+    width: 100%;
+    max-width: 300px;
+     height: 100%;
+    max-height: 160px;
+}
+ h2,p{
+   text-align: center
+}
+
+/* Seller info */
+.Seller-info{
+    overflow: hidden;
+    width: 100%;max-width: 1200px;margin-left: auto;margin-right: auto;border: 0px solid black; height: auto;font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 530px) {
+ .columnA,.columnC {
+ display: none;
+}
+    .columnB {max-width:500px; width: 100%;margin-left: auto;margin-left: auto;}
+}
+
+/*seller feedback*/
+.feedback{text-align: center}
+.feedbackButton {
+  background-color: white; 
+  border: 2px solid #008CBA;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.feedbackDiv1{
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 80px;
+  z-index: 9;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    background-color: #ddd;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.feedbackDiv2{
+
+margin: auto;
+border: none;
+max-width: 200px;
+    width: 100%;
+    height: auto;
+    padding: 5px 12px;
+}
+.positive{
+  background-color: white; 
+  border: 1px solid #008CBA;
+  padding: 10px 15px;
+  color: black;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;}
+.negative{
+       background-color: white; 
+  border: 1px solid #008CBA;
+  padding: 10px 15px;
+  color: black;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* text area*/
+.textArea{width: 100%; max-width: 800px; height: 400px; margin-left: auto;margin-right: auto;}
+
+textarea {
+  margin-top: 10px;
+  margin-left:auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 800px;
+  height: 100px;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  
+  border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+  border-image: none;
+  border-radius: 6px 6px 6px 6px;
+  border-style: none solid solid none;
+  border-width: medium 1px 1px medium;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+  color: #555555;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1em;
+  line-height: 1.4em;
+  padding: 5px 8px;
+  transition: background-color 0.2s ease 0s;
+}
+
+
+textarea:focus {
+    background: none repeat scroll 0 0 #FFFFFF;
+    outline-width: 0;
+}
+.comment{  
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 80px;
+  z-index: 9;
+  width: auto;
+  }
+
+.submitComment{
+  background-color: white; 
+  border: 1px solid #008CBA;
+  border-radius: 10px;
+  padding: 10px 15px;
+  color: black;
+  border-radius: 3px;
+ margin-left: auto;
+ margin-right: auto;
+    display: block;
+  text-decoration: none;
+-ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 16px;
+  
+  cursor: pointer;}
+/*display comments*/
+.displayComment{
+     background-color: white; 
+  border: 1px solid #008CBA;
+  border-radius: 10px;
+  padding: 10px 15px;
+  color: black;
+  border-radius: 3px;
+ margin-left: auto;
+ margin-right: auto;
+    display: block;
+  text-decoration: none;
+-ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 16px;
+  cursor: pointer;     
+    }  
+.commentStyle{
+     
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: block;
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    }
+.comments{font-size: 18px;padding: px;} 
+.overalFeedbackPer{
+        text-align: center;
+    padding:10px;
+    }
+.displayDiff{ text-align: center}
+.displayDiff button{background-color: white;border-radius: 5px;cursor: pointer}
+    .positiveBtn{ border: 2px solid green;}
+    .negativeBtn{border: 2px solid red;}
+
+    /*comment table*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  max-width:1000px;
+  width: 100%;
+  
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+    font-family:sans-serif;
+    font-size: 15px;
+}
+th{border: 1px solid #ddd}
+@media screen and (max-width: 600px) {
+.overalFeedbackPer{
+     font-size: 16px;
+    }
+}

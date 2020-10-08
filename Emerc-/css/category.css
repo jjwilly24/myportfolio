@@ -1,0 +1,140 @@
+.mobileMenu{display: none}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+    background-color:inherit;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+/* main content */
+.row,.column {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  border:0.1px solid #73CFF5;
+  width: 33%;
+  padding: 10px;
+  height: 320px;
+  overflow: hidden;
+  /*max-height:320px;
+  height: 100%;*/
+}
+.ImageItem{max-width:200px; width: 100%;height: 200px;margin-left: auto;margin-right: auto;display: block;}
+.column a {text-decoration: none;text-align: center}
+.column a:hover{text-decoration:underline;}
+.row{ max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.header{
+    overflow: hidden;
+    border:0.1px solid #2C414A;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 180px;
+    height: 100%;
+    max-width: 1300px;
+    width: 100%;
+    background-color:#154A7B}
+    .header h2,h3{color: white}
+    .header img{width: 180px;height: 180px;}
+
+.skip{
+    padding: 10px;
+    max-width: 970px;
+    margin-left: auto;
+    margin-right: auto}
+.skip a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.skip a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+    
+    text-align: right;
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+     text-align: right;
+  background-color: #73CFF5;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+    
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+    .header img,h3{display: none}
+}
+@media screen and (min-width:600px) and (max-width: 1020px) {
+    .header img{display: none}
+    }
+
+@media screen and (min-width:100px) and (max-width:1000px){
+    .mobileMenu{display: block}
+}

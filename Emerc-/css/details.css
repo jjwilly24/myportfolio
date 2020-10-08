@@ -1,0 +1,416 @@
+body {
+background-color:white; 
+  margin-left: auto;
+    margin-right: auto;
+    font-family:sans-serif;
+    font font-size: 1.2em;
+
+}
+
+html{ 
+background-color: white;
+  
+}
+.rows {
+     border: 0px solid #d4d4d4;
+  max-width: 1250px;
+  box-sizing: border-box;
+ margin-left: auto;
+ margin-right: auto;
+ height: auto;
+ font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.columns {
+     border: 0px solid #d4d4d4;
+  box-sizing: border-box;
+  float: left;
+   height: auto;
+}
+/* Create three equal columns that floats next to each other */
+#column1{width: 33.33%;}
+#column2{width: 33.33%;}
+#column3{width: 33.33%;}
+
+/* Clear floats after the columns */
+.rows:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.SellerOuter{ 
+  float: right;
+  margin: 10px;
+  width: 100%;
+  height: auto;    
+  max-width: 380px;
+  max-height: 500px;
+  border: 0px solid #d4d4d4;}
+
+.columnDetailRes {
+    float: right;
+  border: 0px solid #d4d4d4;
+ font-size: 16px;
+}
+.columnDetailRes p{color:#525252;}
+
+.sellerdetails{
+    text-align: center;
+    border: 1px solid #FDFDFE;
+     width: 70%;
+  height: auto;
+    background-color: 
+}
+.sellerdetails p{color:#525252;}
+
+div.sellerdetails {
+    border-radius: 5px;
+  background-color: #FDFDFE;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 5px;
+}
+
+
+/*-- quantity form -->*/
+
+.description{
+  width: 100%;
+  height: auto;
+  border: 0px solid #d4d4d4;
+  padding: 5px;
+}
+/*buy and add to cart button*/
+.buttonContainer{}
+.btn {
+  max-width: 118px;
+  width: 100%;
+  padding: 8px 15px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color:black;
+  background-color: #259DCF;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 9px #999;
+}
+
+.btn:hover {background-color: dodgerblue}
+
+.btn:active {
+  background-color: dodgerblue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/*end of buy and add to cart button*/
+.show{
+  width: 400px;
+  height: 400px;
+  border: 1px solid #d4d4d4;
+}
+#show-img { width: 100%; height:auto;position: absolute }
+.small-img{
+  width: 350px;
+  height: 70px;
+  margin-top: 10px;
+  position: relative;
+  left: 25px;
+}
+.small-img .icon-left, .small-img .icon-right{
+  width: 12px;
+  height: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+.small-img .icon-left{
+  transform: rotate(180deg)
+}
+.small-img .icon-right{
+  right: 0;
+}
+.small-img .icon-left:hover, .small-img .icon-right:hover{
+  opacity: .5;
+}
+.small-container{
+  width: 310px;
+  height: 80px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.small-container div{
+  width: 800%;
+  position: relative;
+}
+
+.small-container .show-small-img{
+  width: 70px;
+  height: 70px;
+  margin-right: 6px;
+  cursor: pointer;
+  float: left;
+}
+.small-container .show-small-img:last-of-type{
+  margin-right: 0;
+}
+
+/* Item details */
+.detailrow{
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid #259DCF;
+  margin-top: %;
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  padding: 10px;  
+}
+
+/* Clear floats after the columns */
+.detailrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.imageviewer {margin-top: 1%;  }
+ /* Mobile responsive*/
+.sellerInfo{display: none}
+
+.slider-wrapping{display: none}
+
+.mobileDetail{display: none}
+
+#mobileDescription{display: none}
+.mobileMenu{display: none}
+ /* Mobile menu*/
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+ #scroll {
+  width:0px;
+    height:0px;
+     position:absolute;
+}
+#scroll span {
+   display: none;
+}
+#scroll:hover {
+  display: none;
+}
+
+@media screen and (min-width:1000px) and (max-width:1232px){  
+#column1{width: 42%;margin-left: 1%}
+#column2{width: 35%;}
+#column3{width: 20%;}
+  .SellerOuter{ 
+  float:left;
+  margin-top: 15px;
+  margin: 0px;
+  width: 100%;
+  height: auto; 
+  margin-right: 3%;
+  
+  max-height: 500px;
+  border: 0px solid #d4d4d4;}
+.sellerdetails{
+     width: 100%;
+}
+
+}
+@media screen and (min-width:823px) and (max-width:1000px){
+    #column1{width: 45%;margin-left:2%}
+    #column2{width: 40%;margin-left: 2%}
+    #column3{display: none;}
+    .mobileMenu{display: block;
+    }
+     .sellerInfo{display: block;}
+    .show{width: 380px;height: 360px;}
+    .small-img .icon-left, .small-img .icon-right{
+        margin-left: -6%;}
+    .small-container{
+    width: 315px;
+    margin-left: 1px;
+    }
+    #show-img { width: 100px; height:100px; }
+    .SellerOuter{display: none;}
+    .sellerdetails{display: none;}
+     
+}
+@media screen and (min-width:760px) and (max-width:822px){
+    #column1{width: 50%;margin-left: -22%}
+    #column2{width: 40%;margin-left: 2%}
+    #column3{display: none;}
+    .mobileMenu{display: block;
+    }
+     .sellerInfo{display: block;}
+    .show{width: 380px;height: 360px;}
+    .small-img .icon-left, .small-img .icon-right{
+        margin-left: -6%;}
+    .small-container{
+    width: 315px;
+    margin-left: 1px;
+    }
+    #show-img { width: 100px; height:100px; }
+    .SellerOuter{display: none;}
+    .sellerdetails{display: none;}
+     
+}
+
+@media screen and (min-width:100px) and (max-width:760px){
+    .mobileMenu{display: block}
+     .SellerOuter{display: none;}
+    .sellerdetails{display: none;}
+    .rows{display: none}
+    .imageviewer{display: none;}
+    .mobileDetail{display: block}
+    #mobileDescription{display: block;padding: 10px;}
+    /*phone size start*/
+    .detailrow{
+  
+  box-sizing: border-box;
+     border-radius: 3px;
+  border: 1px solid #259DCF;
+    margin-top: 1%;
+}
+.slider-wrapping {
+margin-top: -3.5%;
+ margin-bottom: 0%;  
+ display: block;
+ width: 100vw;
+  height:45vh;
+}
+
+.slider--item {
+  max-width:1000px;
+  width: 100%;
+  height: 45vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+    
+.slick-arrow {
+  position: relative;
+  width: 0px;
+  top: 0;
+  height: 0%;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0);
+  text-indent: -9999px;
+  z-index: 999;
+}
+
+
+.slick-dots {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+}
+.slick-dots li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 6px;
+}
+.slick-dots li.slick-active button {
+  background-color: white;
+  height: 10px;
+  width: 10px;
+}
+.slick-dots li.slick-active button:hover {
+  background-color: white;
+}
+.slick-dots li button {
+  outline: none;
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0);
+  text-indent: -9999px;
+  border-radius: 100%;
+  cursor: pointer;
+  -webkit-transition: all, 0.2s, ease-in 1s ease-in-out;
+  -khtml-transition: all, 0.2s, ease-in 1s ease-in-out;
+  -moz-transition: all, 0.2s, ease-in 1s ease-in-out;
+  -ms-transition: all, 0.2s, ease-in 1s ease-in-out;
+  -o-transition: all, 0.2s, ease-in 1s ease-in-out;
+  transition: all, 0.2s, ease-in 1s ease-in-out;
+}
+.slick-dots li button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.hr-sect{margin-top: -0%}
+
+}
