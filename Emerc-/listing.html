@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http--equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style1.css">
+ 
+    <link rel="stylesheet" href="index-style.css">
+     <link rel="stylesheet" href="css/sell.css">
+    <link rel="stylesheet" href="css/contact_us.css">
+    <link rel="stylesheet" href="css/formPopup.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link href="css/listSearch.css" rel="stylesheet" />
+    
+     <!-- Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+     
+    <title>Listing</title>
+</head>    
+<body>
+  <a href="#" id="scroll" style="display: none;"><span></span></a>
+<section id="section1">
+    <a href="#">Help and contact</a>
+    <a href="#">Today deals</a>
+    <a href="#">Recently view</a>
+    <a href="#">Summary</a>
+    <a href="#">Listing</a>
+    <a href="#">Sell</a>  
+    <div id="logos"> 
+        <a class="notification" id="cart" href="#" style="padding: 5px;padding-right: 5px;">
+            <span><img src="pictures/icons8-shopping-cart-26.png"   /></span>
+            <span id="badgeCart" class="cartNoti">0</span>
+        </a>
+        <a class="notification" id="cart" href="#" style="padding: 5px;">
+             <span><img src="pictures/icons8-contacts-24.png"   /></span>
+             <span id="badgeAl" class="alertNoti">0</span>
+         </a>
+        <a class="notification" id="messageIcon" href="messageInbox.html" style="padding: 5px;">
+        <span><img src="pictures/icons8-new-post-24.png"   /></span>
+        <span  id="badgeMsg" class="messageNoti"></span>
+        </a> 
+        </div>
+     <div class="navbar">
+  <div id="logOn" style="display: none;">
+  <div  class="dropdown">
+    <button class="dropbtn">
+    </button>
+    <div class="dropdown-content">
+        <ul  style="list-style: none;  " class="userName">
+        
+    </ul>
+    </div>
+  </div> 
+</div>
+
+<div id="logOff" style="display: none;">
+  <div  class="dropdown">
+    <button class="dropbtn">
+    </button>
+    <div class="dropdown-content">
+        <ul  style="list-style: none;  " class="userName">
+        
+    </ul>
+    </div>
+  </div> 
+</div> 
+</div>
+    </section>
+<!-- overlay after popup -->
+<div id="overlay" onclick="off()"></div>
+<!-- popup signin and signup -->
+<div class="form-popup" id="myForm">
+<div style="text-align: center"><P style="display: none;" id="incorrect_Entry">Wrong password or username!</P></div>
+  <form id="login-form" class="form-container">
+      <button type="button" class="cancel" onclick="closeForm()"><img class="close" src="https://img.icons8.com/material-rounded/24/000000/cancel.png"/></button>
+    <h1>Sign in</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input id="log-email" type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input id="log-password" type="password" placeholder="Enter Password" name="psw" required>
+    
+    <button onclick="login()" type="submit" class="popupButton btn1">Sign in</button>
+    <button onclick="openForm2()" class="popupButton btn2">Sign up</button>
+      <a style="cursor: pointer;text-decoration: none">Forgot your password?</a>
+  </form>
+</div> 
+    
+<!-- popup signin and signup -->
+<div class="form-popup" id="mySignup">
+ <div style="text-align: center"><P style="display: none;" id="emailExist">Email already exist!</P></div>
+  <form id="signup-form" class="form-container">
+      <button type="button" class="cancel" onclick="closeForm2()"><img class="close" src="https://img.icons8.com/material-rounded/24/000000/cancel.png"/></button>
+    <h1>Sign up</h1>
+      <label for="firstname"><b>First name</b></label>
+    <input id="txtFirstName" type="text" placeholder="Enter First name" name="firstname" required>
+      
+       <label for="lastName"><b>Last name</b></label>
+    <input id="txtLastName" type="text" placeholder="Enter Last name" name="lastname" required>
+      
+    <label for="email"><b>Email</b></label>
+    <input id="txtEmail" type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" name="psw"placeholder="At least 8 characters" id="txtPassword"
+  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+    
+    <button onclick="openForm()" class="popupButton btn1">Sign in</button>
+    <button onclick="signup()"class="popupButton btn2">Sign up</button>
+      <a style="cursor: pointer;text-decoration: none">Forgot your password?</a>
+  </form>
+</div> 
+    
+    <hr id="hr1">
+    <!-- responsive 1 -->
+     <div id="logos1"> 
+        <a class="notification" id="cart" href="#" style="padding: 5px;padding-right: 5px">
+            <span><img src="pictures/icons8-shopping-cart-26.png"/></span>
+            <span id="badgeCart" class="cartNoti">0</span>
+         </a>
+         <a class="notification" id="cart" href="#" style="padding: 5px;">
+             <span><img src="pictures/icons8-contacts-24.png"   /></span>
+             <span id="badgeAl" class="alertNoti">0</span>
+         </a>
+        <a class="notification" id="messageIcon" href="messageInbox.html" style="padding: 5px;">
+            <span><img src="pictures/icons8-new-post-24.png"/></span>
+            <span id="badgeMsg" class="messageNoti">0</span>
+         </a> 
+        </div>
+    
+<section id="section2">
+ <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="background-color: transparent">&times;</a>
+  <div class="overlay-content">
+    <a href="#">Electronics</a>
+    <a href="#">Appliance</a>
+    <a href="#">Beauty and personal</a>
+    <a href="#">Kitchen and home</a>
+    <a href="#">Fashion</a>
+    <a href="#">Recently view</a>
+    <a href="#">Deals</a>
+  </div>
+</div>
+    <span class="mobileMenu" style="font-size:30px;cursor:pointer;float: left;padding: 5px;margin-top: 6px;" onclick="openNav()">&#9776;</span>
+     <a  href="index.html"><img class="emerc" src="logo.png"></a>
+
+    
+   </section> 
+        <!-- popup for contact -->
+    <div id="modalOne" class="modal">
+      <div class="modal-content">
+        <a class="close">&times;</a>
+        <div class="contact-form">
+          <form class="form" action="/">
+            <h2 style="text-align: center">Contact Us</h2>
+            <div class="inputfield">
+              <input class="fname" type="text" name="name" placeholder="Full name">
+              <input type="text" name="name" placeholder="Email">
+              <input type="text" name="name" placeholder="Phone number">
+            </div>
+            <span>Message</span>
+            <div>
+              <textarea rows="4"></textarea>
+            </div>
+            <button type="submit" href="/">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <div class="s003">
+      <form>
+       
+          <div class="input-field first-wrap">
+            <div class="input-select">
+              <select id="choices" data-trigger="" name="choices-single-defaul" onchange="myChoices()">
+                <option placeholder="">Category</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Pets">Pets</option>
+                <option value="furniture_appliances">Furniture & Appliances</option>
+                <option value="Patio_garden">Patio & Garden</option>
+                <option value="Baby">Baby</option>
+                <option value="Toys">Toys</option>
+                <option value="Sport">Sports,Fitness &  Outdoors</option>
+                <option value="Video_Games">video Games</option>
+                <option value="Household_essential">Household Essentials</option>
+                <option value="Beauty">Beauty</option>
+                <option value="Health_wellness">Health & Wellness</option>
+                <option value="Pharmacy">Pharmacy</option>
+                <option value="Auto_tires_accessories">Auto,Tires & Accessories</option>
+                <option value="Personalized_gifts">Personalized Gifts</option>
+                <option value="Photo">Photo</option>
+                <option value="Arts_crafts_sewing">Arts,Crafts & Sewing</option>
+                <option value="Party_Supplies">Party Supplies</option>
+                <option value="office_supplies">Office Supplies</option>
+                <option value="Music_books">Music & Books</option>
+                <option value="School_supplies">School Supplies</option>
+                <option value="Food">Food</option>
+              </select>
+            </div>
+          </div>
+       
+      </form>
+    </div>
+    
+   <!-- display templates -->
+    
+<div class="row">
+  <div name="Arts_crafts_sewing" class="column" style="display: none">
+  <a href="#"><img class="ImageItem" src="pictures/choices/ja%20art.jpg"></a>
+   <a href="#">JAMAICA PAINTING | HAND PAINTING DONE WITH ACRYLIC PAINT </a>
+      <p>$5,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+  <div name="Arts_crafts_sewing" class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/ja%20craft.jpg"></a>
+   <a href="#"> JAMAICAN AUTHENTIC CRAFTS | HANDMADE WOODEN SOUVENIRS </a>
+      <p>$2,000JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+   <div  name="Arts_crafts_sewing" class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/textiles-products-1000x801.jpg"></a>
+   <a href="#"> COLOURFUL SEWING EMBROIDERY THREADS | SOLD PER PCS</a>
+      <p>$400 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+</div>
+
+<div class="row">
+  <div name="Auto_tires_accessories" class="column" style="display: none">
+  <a href="#"><img class="ImageItem" src="pictures/choices/car%20radiator.jpg"></a>
+   <a href="#">CAR RADIATOR 2816 FOR FORD EXPLOYER 2006</a>
+      <p>$17,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+  <div name="Auto_tires_accessories" class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/trailer-king-tires-tks24t-64_1000.jpg">TRAILER KING 10-PLY ST RADIAL TRAILER TIRE |SOLD PER PAIR</a>
+   <a href="#"></a>
+      <p>$8,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+   <div name="Auto_tires_accessories" class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/Steering%20Wheel%20Cover.jpg"></a>
+   <a href="#">15" BLACK LEATHER STEERING WHEEL COVER FOR BMW BENZ C350</a>
+      <p>$5,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+</div>
+
+<div class="row">
+  <div name="Baby" class="column" style="display: none">
+  <a href="#"><img class="ImageItem" src="pictures/choices/BABY.webp"></a>
+   <a href="#">NEWBORN BABY ONESIE BODYSUIT 7 PACK SIZE 3-9 MONTH </a>
+      <p>$1,500 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+  <div name="Beauty" class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/eyelashes.jpg"></a>
+   <a href="#">PACK OF 5 100% REAL MONK 3D FALSE EYELASHES </a>
+      <p>$1,200 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+</div>
+
+   <div class="row">
+  <div name="Clothing"class="column" style="display: none">
+  <a href="#"><img class="ImageItem" src="pictures/choices/belt.webp"></a>
+   <a href="#">GUCCI WHITE GG MARMONY LEATHER BELT</a>
+      <p>$2,250 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+  <div name="Clothing"class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/bottomwear%20men%20joggers.webp"></a>
+   <a href="#">MEN JOGGERS SWEATPANTS | MENS SPORT</a>
+      <p>$2,500 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+   <div name="Clothing" class="column"style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/Footwear%20sandals.jpg"></a>
+   <a href="#"> CUTE BLACK BRIDGET SANDALS | JAMAICA BRAND</a>
+      <p>$15,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+</div>
+    
+   <div class="row">
+  <div name="Clothing"class="column" style="display: none">
+  <a href="#"><img class="ImageItem" src="pictures/choices/NIKE%20HAT.jpg"></a>
+   <a href="#">BLACK FEATHERLIGHT NIKE CAP </a>
+      <p>$1,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+  <div name="Clothing" class="column"style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/ONEPIECE%20romper.webp"></a>
+   <a href="#"> ONE PIECE FLORAL PRINT JUMPSUIT </a>
+      <p>$2,500 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+   <div name="Clothing" class="column"style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/TOPWEAR%20MENS%20SHIRT.jpg"></a>
+   <a href="#">NAUTICA MEN'S SHORT SLEEVE 100% COTTON POLO SHIRT</a>
+      <p>$3,500 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+</div>
+    
+   <div class="row">
+  <div name="Clothing" class="column"style="display: none">
+  <a href="#"><img class="ImageItem" src="pictures/choices/UNDERGARMENT%20PANTIES.jpg"></a>
+   <a href="#">FOREVER 21 LACE PANTY SET</a>
+      <p>$800 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+     <div name="Clothing" class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/channel%20bag.jpg"></a>
+   <a href="#">LAMBSKIN BLACK MINI FLAP BAG | CHANNEL)</a>
+      <p>$6,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+</div>
+
+    <div class="row">
+  <div name="Electronics"class="column" style="display: none">
+  <a href="#"><img class="ImageItem" src="pictures/choices/TY.jpg"></a>
+   <a href="#">TCL 80CM HD REDY CERTIFIED ANDROID SMART LED TV (BLACK)</a>
+      <p>$22,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+  <div name="Electronics"class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/SMART%20DEVICES.jpg"></a>
+   <a href="#"> SMART DEVICES-TABLET\SPEAKERS\SMART WATCHES\HEADPHONES</a>
+      <p>$5,000-50,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+  <div name="Electronics"class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/white%20iphone8.webp"></a>
+   <a href="#">APPLE iPHONE 8 | (FACTORY UNLOCKED) VERIZON AT&T TMOBILE SPRINT GSM (64GB 256GB)</a>
+      <p>$29,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+   <div name="Electronics"class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/picture3.jpg"></a>
+   <a href="#">ACER- NITRO COMPUTER LAPTOP | BRAND NEW </a>
+      <p>$29,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+   <div name="Food"class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/food.jpg"></a>
+   <a href="#">SNACKS\ CANNED FOOD\NUTS\CEREALS\BOTTLE DRINKS</a>
+      <p>$500-10,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+</div>
+
+   <div class="row">
+  <div name="Health_wellness"class="column" style="display: none">
+  <a href="#"><img class="ImageItem" src="pictures/choices/VITAMIN.jpg"></a>
+   <a href="#">NATURE'S BOUNTY VITAMIN B-12 |300 TABLETS</a>
+      <p>$2,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+  <div name="furniture_appliances"class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/HOME%20APPLIANCE.png"></a>
+   <a href="#">MICROWAVE KETTLE TOASTER SET | STAINLESS STEEL</a>
+      <p>$35,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+   <div name="furniture_appliances"class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/wooden-sofa-set-500x500.jpg"></a>
+   <a href="#">OWN STYLE 5 SEATER WOODEN SOFA SET</a>
+      <p>$45,000JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+</div>
+
+    <div class="row">
+  <div name="Household_essential"class="column" style="display: none">
+  <a href="#"><img class="ImageItem" src="pictures/choices/household%20essentials.jpg"></a>
+   <a href="#">BATHSOAP\DETERGENT\PLASTIC UTENCILS\CLEANING AGENTS</a>
+      <p>$1,000-10,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+  <div name="Music_books"class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/GUITAR.jpg"></a>
+   <a href="#">RIO 39" FULL SIZE ACOUSTIC CLASSICAL STRING GUITAR</a>
+      <p>$17,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+   <div name="Music_books"class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/JA%20BOOK.jpg"></a>
+   <a href="#">HOW TO LOVE A JAMAICAN BY ALEXIA ARTHURS | JAMAICAN AUTHOR</a>
+      <p>$2,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+</div>
+
+    
+   <div class="row">
+  <div name="office_supplies"class="column" style="display: none">
+  <a href="#"><img class="ImageItem" src="pictures/choices/OFFICE%20SUPPLIES.jpg"></a>
+   <a href="#">STATIONARY | PRINTING </a>
+      <p>$500-20,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+  <div name="Party_Supplies"class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/PARTY%20SUPPLIES.jpg"></a>
+   <a href="#">BIRTHDAY PARTY SUPPLIES AND DECORATIONS</a>
+      <p>$1,000-20,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+</div>
+
+    
+    <div class="row">
+<div name="Patio_garden"class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/patio.jpg"></a>
+   <a href="#">WICKER PATIO FURNITURE LOUNGE CHAIR SET | SMALL</a>
+      <p>$15,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+  <div name="Patio_garden"class="column" style="display: none">
+  <a href="#"><img class="ImageItem" src="pictures/choices/GARDEN.jpg"></a>
+   <a href="#">GARDEN TOOLS SET - 11 PIECE | HEAVY DUTY TOOLS</a>
+      <p>$10,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+  <div name="Personalized_gifts"class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/PERSONALIZED%20GIFTS.jpg"></a>
+   <a href="#">HAPPY BIRTHDAY | PERSONALIZED GIFT | CUSTOM GIFT BOX </a>
+      <p>$5,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+   <div name="Pets"class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/pet_accessories.png"></a>
+   <a href="#">PET ACCESSORIES</a>
+      <p>$4,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+</div>
+
+    <div class="row">
+  <div name="Pharmacy"class="column" style="display: none">
+  <a href="#"><img class="ImageItem" src="pictures/choices/pharmacy.jpg"></a>
+   <a href="#">CHILDREN'S DPH EXPECTORANT ELIXIR COUGH COLD MEDICINE</a>
+      <p>$900 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+  <div name="Photo"class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/PHOTO.jpg"></a>
+   <a href="#">WOODEN GALLERY MULTI-OPENING FRAMES</a>
+      <p>$3,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+   <div name="School_supplies"class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/SCHOOL%20SUPPLIES.jpg"></a>
+   <a href="#">BOOKS \ PENCILS \ PENS \ ERASERS \ CALCULATORS \GRAPH SHEETS \ PRINTING SHEETS etc.)</a>
+      <p>$500-20,000JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+</div>
+
+  <div class="row">
+  <div name="Sport"class="column" style="display: none">
+  <a href="#"><img class="ImageItem" src="pictures/choices/sport.jpg"></a>
+   <a href="#">SPORTING TOOLS AND EQUIPMENTS </a>
+      <p>$3,000-20,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+  <div name="Sport"class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/fitness.jpg"></a>
+   <a href="#">GYM TOOLS AND EQUIPMENTS </a>
+      <p>$2,000-20,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+   <div name="Toys"class="column" style="display: none">
+      <a href="#"><img class="ImageItem" src="pictures/choices/TOYS.jpg"></a>
+   <a href="#">TOY STORY 4 DELUXE FIGURE SET</a>
+      <p>$5,500 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+</div>
+
+    <div class="row">
+  <div name="Video_Games"class="column" style="display: none">
+  <a href="#"><img class="ImageItem" src="pictures/choices/video%20games.jpg"></a>
+   <a href="#">GAME CONTROLLER \ PLAY STATION </a>
+      <p>$30,000 JMB &nbsp;	&#10084;&nbsp;</p>
+  </div>
+
+
+</div>
+    
+        <script src="js/choices.js"></script>
+    <script>
+      const choices = new Choices('[data-trigger]',
+      {
+        searchEnabled: false,
+        itemSelectText: '',
+      });
+
+    </script>
+       <!-- footer begin -->
+    <div style="padding-top: 20px;" class="rowFooter">
+  <div class="columnFooter">
+         <h3>SERVICE</h3>
+      <a href="#">Online Help</a><br/><br/>
+      <button class="button" data-modal="modalOne">Contact Us</button><br/><br/>
+      <a  href="#">Order Status</a><br/><br/>
+      <a  href="#">Change location</a><br/><br/>
+     <a href="#">Freguently ask question</a>
+  </div>
+  <div class="columnFooter" >
+         <h3>Policies</h3>
+      <a href="#">Terms of Use</a><br/><br/>
+      <a href="#">Privacy Policy</a><br/><br/>
+      <a href="#">Refund Policy</a><br/><br/>
+      <a href="#">Billing System</a>
+  </div>
+  <div class="columnFooter" id="columnFooter3" >
+      <h3>Get to know Us</h3>
+      <a href="#">About Us</a><br/><br/>
+      <a href="#">How to Sell on Emerc</a><br/><br/>
+      <a href="#">Our payment Option</a>
+  </div>
+	<div class="bottomcontainer">
+				<div class="">
+					<div id="logos" > 
+                    <a id="facebook" href="#" style="padding: 5px;padding-right: 5px;"><img src="pictures/icons8-facebook-64.png"   /></a>
+                    <a id="instagram" href="#" style="padding: 5px;"><img src="pictures/icons8-instagram-48.png"   /></a>
+                        <p class="pull-left">© 2019 Emerc. All rights reserved.</p>
+                    </div>
+				</div>
+           </div>
+</div>
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+
+<script type="text/javascript" src="js/init.js"></script>
+    
+<script type="text/javascript" src="js/auth.js"> </script>
+<script type="text/javascript"  src="js/minorPages.js"></script>
+<script type="text/javascript"  src="js/messageInbox.js"></script>
+ <!-- Latest jQuery form server -->
+ <script src="https://code.jquery.com/jquery.min.js"></script>
+<script>
+   function myChoices(){
+       var remove = sessionStorage.getItem("update");
+        var num = document.getElementsByName(remove).length;
+       for(var i=0; i<num ;i++){
+        document.getElementsByName(remove)[i].style.display = "none";
+       }
+       
+        var x = document.getElementById("choices").value;
+        sessionStorage.setItem("update", x);
+        var num = document.getElementsByName(x).length;
+       for(var i=0; i<num ;i++){
+        document.getElementsByName(x)[i].style.display = "block";
+       }
+   }
+</script>
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+  </script>
+           <!-- jvascript for popup contact us -->
+      <script>
+        var modalBtns = [...document.querySelectorAll(".button")];
+        modalBtns.forEach(function(btn){
+          btn.onclick = function() {
+            var modal = btn.getAttribute('data-modal');
+            document.getElementById(modal).style.display = "block";
+          }
+        });
+        
+        var closeBtns = [...document.querySelectorAll(".close")];
+        closeBtns.forEach(function(btn){
+          btn.onclick = function() {
+            var modal = btn.closest('.modal');
+            modal.style.display = "none";
+          }
+        });
+        
+        window.onclick = function(event) {
+          if (event.target.className === "modal") {
+            event.target.style.display = "none";
+          }
+        }
+      </script>
+</body>
+   
+</html>

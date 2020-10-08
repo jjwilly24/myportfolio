@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+   <div class="signup">
+  <div align = "center">
+          <a href="index.html"><img src="logo.png" width="150" height="150" /></a>
+       </div>
+       <div style="text-align: center"><P style="display: none;" id="emailExist">Email already exist!</P></div>
+  <form id="signup-form">
+      <h1>Create account</h1>
+       <h3>Name:</h3>
+       <input id="txtFirstName" type="text" placeholder="FIRST NAME" required/>&nbsp;<input id="txtLastName" type="text" placeholder="LAST NAME"required/><br>
+    <h3>Email:</h3>
+    <input id="txtEmail" type="email" placeholder="Email"required/><br>
+        <div style="text-align: center"><P style="display:none;" id="passwordVerify">password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters!</P></div>
+    <h3>Password:</h3>
+  
+<input style="max-width:300px;width: 80%;line-height:3em;font-family: 'Ubuntu', sans-serif;margin:1em 2em;border-radius:5px;border:2px solid #f2f2f2;outline:none;
+  padding-left:10px;"type="password" name="password" placeholder="At least 8 characters" id="txtPassword"
+  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"     
+  required>
+
+<label for="show_password">
+	<input type="checkbox" name="show_password" id="show_password">
+	Show 
+</label>
+
+    <br>   
+      <button onclick="signup()" id="btnSignup" class="sign-button">Sign Up</button>
+    <br>
+     <p style="font-size:12px;">By creating an account, you agree to our <a href="#" style="color:dodgerblue">User Agreement</a>.</p>
+      <p style="font-size:12px;">and acknowledge reading our <a href="#" style="color:dodgerblue">User Privacy Notice</a>.</p><br>
+      <P>Already have an account? <a href="login.html" style="color:dodgerblue">Sign in</a>.</P>
+       
+  </form>
+</div> 
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+
+<script type="text/javascript" src="js/init.js"></script>
+    
+<script src="js/auth.js"> </script>
+
+    <script>
+// Listen for click events
+document.addEventListener('click', function (event) {
+
+	// If the clicked element isn't our show password checkbox, bail
+	if (event.target.id !== 'show_password') return;
+
+	// Get the password field
+	var password = document.querySelector('#txtPassword');
+	if (!password) return;
+
+	// Check if the password should be shown or hidden
+	if (event.target.checked) {
+		// Show the password
+		password.type = 'text';
+	} else {
+		// Hide the password
+		password.type = 'password';
+	}
+
+}, false);
+</script>
+<!-- password verification -->
+<script>
+   var verify = document.getElementById('passwordVerify');
+   var myInput = document.getElementById("txtPassword");
+// When the user clicks on the password field, show the message box
+myInput.onfocus = function() {
+  verify.setAttribute("style", "display: block;");
+  verify.setAttribute("style", "font-size:12px;");
+}
+
+
+
+</script>
+</body>
+</html>

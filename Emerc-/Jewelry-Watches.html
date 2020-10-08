@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http--equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="css/contact_us.css">
+    <link rel="stylesheet" href="css/Listing.css">
+     <!-- Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+     
+    <title>Create listing</title>
+</head>    
+<!--<body oncontextmenu="return false" >-->
+<body>
+  <a href="#" id="scroll" style="display: none;"><span></span></a>
+<section id="section1">
+    <a href="#">Help and contact</a>
+    <a href="#">Today deals</a>
+    <a href="#">Recently view</a>
+    <a href="#">Summary</a>
+    <a href="#">Listing</a>
+    <a href="#">Sell</a>  
+    <div id="logos"> 
+        <a id="cart" href="#" style="padding: 5px;padding-right: 5px"><img src="pictures/icons8-shopping-cart-26.png"   /></a>
+        <a id="message" href="#" style="padding: 5px;"><img src="pictures/icons8-new-post-24.png"   /></a> 
+        </div>
+     <div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Hello <strong>Joey</strong>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Joey Williamson<img style="padding-left: 5px" src="pictures/icons8-contacts-24.png"  /></a>
+      <a href="#">Account setting</a>
+      <a href="#">Sign out</a>
+      <a href="#">Become a member</a>
+    </div>
+  </div> 
+</div>
+    </section>
+    <hr id="hr1">
+    <!-- responsive 1 -->
+     <div id="logos1"> 
+        <a id="cart" href="#" style="padding: 5px;padding-right: 5px"><img src="pictures/icons8-shopping-cart-26.png"/></a>
+         <a id="cart" href="#" style="padding: 5px;"><img src="pictures/icons8-contacts-24.png"   /></a>
+        <a id="message" href="#" style="padding: 5px;"><img src="pictures/icons8-new-post-24.png"   /></a> 
+        </div>
+    
+<section id="section2">
+    <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">Electronics</a>
+    <a href="#">Appliance</a>
+    <a href="#">Beauty and personal</a>
+    <a href="#">Kitchen and home</a>
+    <a href="#">Fashion</a>
+    <a href="#">Recently view</a>
+    <a href="#">Deals</a>
+  </div>
+</div>
+    <span class="mobileMenu" style="font-size:30px;cursor:pointer;float: left;padding: 5px;margin-top: 6px;" onclick="openNav()">&#9776;</span>
+     <a  href="index.html" style="float: left"><img class="emerc" style=""src="logo.png"></a>
+    <div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="Search Ecomerce merchandise">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+   </div>
+</div>    <div class="dropdown1">
+  <button class="dropbutton">Category
+        <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown1-content">
+    <a href="#">Videos games</a>
+    <a href="#">Men fashion</a>
+    <a href="#">woman fashion</a>
+    <a href="#"> Boy fashion</a>
+    <a href="#">Girl fashion</a>
+    <a href="#">Luggage</a>
+    <a href="#">Health and household</a>
+    <a href="#">Sport and outdoor</a>
+    <a href="#">Others</a>
+  </div>
+</div>
+    <hr>
+    </section>
+     <!-- popup for contact -->
+    <div id="modalOne" class="modal">
+      <div class="modal-content">
+        <a class="close">&times;</a>
+        <div class="contact-form">
+          <form class="form" action="/">
+            <h2 style="text-align: center">Contact Us</h2>
+            <div class="inputfield">
+              <input class="fname" type="text" name="name" placeholder="Full name">
+              <input type="text" name="name" placeholder="Email">
+              <input type="text" name="name" placeholder="Phone number">
+            </div>
+            <span>Message</span>
+            <div>
+              <textarea rows="4"></textarea>
+            </div>
+            <button type="submit" href="/">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+<!-- main content -->
+    <form>
+        <!-- /////////////////////////////-->
+ <div class="outerlayer">
+  <div class="Names" style="">
+    <div>
+         <label for="name">Category<span class="required">*</span></label>
+       </div>
+  </div>
+
+  <div class="inputs" style="">
+       <label>Jewelry > Watches</label>
+  </div>
+</div>
+       <div class="outerlayer">
+  <div class="Names" style="">
+    <div>
+        <label  for="name">Product title<span class="required">*</span></label><br>
+       </div>
+  </div>
+  <div class="inputs" style="">
+        <p>Product title<span class="required">*</span></p>
+        <input class="input" id="name" type="text"  maxlength="80" />
+  </div>
+</div>
+    <!-- /////////////////////////////-->
+    <div class="outerlayer">
+  <div class="Names" style="">
+    <div>
+        <label  for="name">ISBN<span class="required">*</span></label><br>
+       </div>
+  </div>
+  <div class="inputs" style="">
+        <p>ISBN<span class="required">*</span></p>
+        <input placeholder="Enter UPC/EAN/ISBN" class="input" id="name" type="text" />
+  </div>
+</div>
+ <!-- /////////////////////////////-->
+ <div class="outerlayer">
+  <div class="Names" style="">
+    <div>
+         <label for="name">Condition<span class="required">*</span></label>
+       </div>
+  </div>
+  <div class="inputs" style="">
+        <p>Condition<span class="required">*</span></p>
+        <select class="input">
+        <option value="New">New</option>
+        <option value="Open box">Open box</option>
+        <option value="Manufactured refurbished">Manufactured refurbished</option>
+        <option value="Seller refurbished">Seller refurbished</option>
+        <option value="Used">Used</option>
+        <option value="For parts/not working">For parts/not working</option>
+        </select>
+  </div>
+</div>
+ <!-- /////////////////////////////-->
+<div class="image">
+    
+    <div class="grid-x grid-padding-x">
+  <div class="small-10 small-offset-1 medium-8 medium-offset-2 cell">
+    <h1>Multiple Image File Upload with Preview</h1>
+    <form action="upload_file.php" id="img-upload-form" method="post" enctype="multipart/form-data">
+      <p>
+       
+        <input class="show-for-sr" type="file" id="upload_imgs" name="upload_imgs[]" maxlength = "5"/>
+      </p>
+      <div class="quote-imgs-thumbs quote-imgs-thumbs--hidden" id="img_preview" aria-live="polite"></div>
+      <p>
+        <input class="button large expanded" type="submit" name="submit" value="Upload Images"/>
+      </p>
+    </form>
+  </div>
+</div>
+</div>
+<!-- /////////////////////////////-->
+   <div class="doublerow">
+  <div class="doublecolumn left" style="">
+    <p>Brand</p>
+          <input placeholder="Select/Enter Brand" class="input" type = "text" list = "Brand" name="Brand"> 
+      <datalist id = "Brand">
+        <option value="None">None</option>
+        <option value="12.0 MP">12.0 MP</option>
+        <option value="0.08 MP">0.08 MP</option>
+        <option value="0.1 MP">0.1 MP</option>
+        <option value="0.3 MP">0.3 MP</option>
+        <option value="0.5 MP">0.5 MP</option>
+        <option value="0.6 MP">0.6 MP</option>
+        <option value="1.0 MP">1.0 MP</option>
+        <option value="1.2 MP">1.2 MP</option>
+        <option value="1.3 MP">1.3 MP</option>
+        <option value="1.9 MP">1.9 MP</option>
+        <option value="2.0 MP">2.0 MP</option>
+        <option value="2.1 MP">2.1 MP</option>
+        <option value="2.3 MP">2.3 MP</option>
+        <option value="3.0 MP">3.0 MP</option>
+        <option value="3.1 MP">3.1 MP</option>
+        <option value="3.2 MP">3.2 MP</option>
+        <option value="3.5 MP">3.5 MP</option>
+      </datalist>
+  </div>
+  <div class="doublecolumn right" style="">
+  </div>
+</div> 
+ <!-- /////////////////////////////-->
+   <div class="doublerow">
+  <div class="doublecolumn left" style="">
+    <p>Model</p>
+          <input class="input" type = "text" list = "Model" name="Model"> 
+      <datalist id = "Model">
+        <option value="None">None</option>
+        <option value="12.0 MP">12.0 MP</option>
+        <option value="0.08 MP">0.08 MP</option>
+        <option value="0.1 MP">0.1 MP</option>
+        <option value="0.3 MP">0.3 MP</option>
+        <option value="0.5 MP">0.5 MP</option>
+        <option value="0.6 MP">0.6 MP</option>
+        <option value="1.0 MP">1.0 MP</option>
+        <option value="1.2 MP">1.2 MP</option>
+        <option value="1.3 MP">1.3 MP</option>
+        <option value="1.9 MP">1.9 MP</option>
+        <option value="2.0 MP">2.0 MP</option>
+        <option value="2.1 MP">2.1 MP</option>
+        <option value="2.3 MP">2.3 MP</option>
+        <option value="3.0 MP">3.0 MP</option>
+        <option value="3.1 MP">3.1 MP</option>
+        <option value="3.2 MP">3.2 MP</option>
+        <option value="3.5 MP">3.5 MP</option>
+        <option value="4.0 MP">4.0 MP</option>
+        <option value="5.0 MP">5.0 MP</option>
+        <option value="5.1 MP">5.1 MP</option>
+        <option value="6.7 MP">6.7 MP</option>
+        <option value="8.0 MP">8.0 MP</option>
+  
+      </datalist>
+  </div>
+  <div class="doublecolumn right" style="">
+    <p>Serial Number</p>
+         <input placeholder="e.g. Polyester, Cotton Blend, Microfiber" class="input" type = "text" list = "Serial Number" name="Serial Number"> 
+      <datalist id = "Serial Number">
+        <option value="None">None</option>
+        <option value="Single Sim">Single Sim</option>
+        <option value="Dual Sim">Dual Sim</option>
+        <option value="Triple Sim">Triple Sim</option>
+        <option value="Quad Sim">Quad Sim</option>
+         </datalist>
+  </div>
+</div> 
+ <!-- /////////////////////////////-->
+   <div class="doublerow">
+  <div class="doublecolumn left" style="">
+    <p>Department</p>
+ <input class="input" type = "text" list = "Department" name="Department"> 
+      <datalist id = "Department">
+        <option value="None">None</option>
+        <option value="12.0 MP">12.0 MP</option>
+        <option value="0.08 MP">0.08 MP</option>
+        <option value="0.1 MP">0.1 MP</option>
+        <option value="0.3 MP">0.3 MP</option>
+        <option value="0.5 MP">0.5 MP</option>
+        <option value="0.6 MP">0.6 MP</option>
+        <option value="1.0 MP">1.0 MP</option>
+        <option value="1.2 MP">1.2 MP</option>
+        <option value="1.3 MP">1.3 MP</option>
+        <option value="1.9 MP">1.9 MP</option>
+        <option value="2.0 MP">2.0 MP</option>
+        <option value="2.1 MP">2.1 MP</option>
+        <option value="2.3 MP">2.3 MP</option>
+        <option value="3.0 MP">3.0 MP</option>
+        <option value="3.1 MP">3.1 MP</option>
+        <option value="3.2 MP">3.2 MP</option>
+        <option value="3.5 MP">3.5 MP</option>
+        <option value="4.0 MP">4.0 MP</option>
+        <option value="5.0 MP">5.0 MP</option>
+        <option value="5.1 MP">5.1 MP</option>
+        <option value="6.7 MP">6.7 MP</option>
+        <option value="8.0 MP">8.0 MP</option>
+        <option value="8.1 MP">8.1 MP</option>
+        <option value="8.7 MP">8.7 MP</option>
+        <option value="10.0 MP">10.0 MP</option>
+      </datalist>
+  </div>
+  <div class="doublecolumn right" style="">
+    <p>Band color</p>
+ <input class="input" type = "text" list = "Band color" name="Band color"> 
+      <datalist id = "Shape">
+        <option value="None">None</option>
+        <option value="12.0 MP">12.0 MP</option>
+        <option value="0.08 MP">0.08 MP</option>
+        <option value="0.1 MP">0.1 MP</option>
+        <option value="0.3 MP">0.3 MP</option>
+        <option value="0.5 MP">0.5 MP</option>
+        <option value="0.6 MP">0.6 MP</option>
+        <option value="1.0 MP">1.0 MP</option>
+        <option value="1.2 MP">1.2 MP</option>
+        <option value="1.3 MP">1.3 MP</option>
+        <option value="1.9 MP">1.9 MP</option>
+        <option value="2.0 MP">2.0 MP</option>
+        <option value="2.1 MP">2.1 MP</option>
+        <option value="2.3 MP">2.3 MP</option>
+        <option value="3.0 MP">3.0 MP</option>
+        <option value="3.1 MP">3.1 MP</option>
+        <option value="3.2 MP">3.2 MP</option>
+        <option value="3.5 MP">3.5 MP</option>
+        <option value="4.0 MP">4.0 MP</option>
+      </datalist>
+  </div>
+</div> 
+<!-- /////////////////////////////-->
+   <div class="doublerow">
+  <div class="doublecolumn left" style="">
+    <p>Band Material</p>
+ <input class="input" type = "text" list = "Band Material" name="Band Material"> 
+      <datalist id = "Band Material">
+        <option value="None">None</option>
+        <option value="12.0 MP">12.0 MP</option>
+        <option value="0.08 MP">0.08 MP</option>
+        <option value="0.1 MP">0.1 MP</option>
+        <option value="0.3 MP">0.3 MP</option>
+        <option value="0.5 MP">0.5 MP</option>
+        <option value="0.6 MP">0.6 MP</option>
+        <option value="1.0 MP">1.0 MP</option>
+        <option value="1.2 MP">1.2 MP</option>
+        <option value="1.3 MP">1.3 MP</option>
+        <option value="1.9 MP">1.9 MP</option>
+        <option value="2.0 MP">2.0 MP</option>
+        <option value="2.1 MP">2.1 MP</option>
+        <option value="2.3 MP">2.3 MP</option>
+        <option value="3.0 MP">3.0 MP</option>
+        <option value="3.1 MP">3.1 MP</option>
+        <option value="3.2 MP">3.2 MP</option>
+        <option value="3.5 MP">3.5 MP</option>
+        <option value="4.0 MP">4.0 MP</option>
+        <option value="5.0 MP">5.0 MP</option>
+        <option value="5.1 MP">5.1 MP</option>
+        <option value="6.7 MP">6.7 MP</option>
+        <option value="8.0 MP">8.0 MP</option>
+        <option value="8.1 MP">8.1 MP</option>
+        <option value="8.7 MP">8.7 MP</option>
+        <option value="10.0 MP">10.0 MP</option>
+        <option value="11.0 MP">11.0 MP</option>
+      </datalist>
+  </div>
+  <div class="doublecolumn right" style="">
+    <p>Band type</p>
+ <input placeholder="Select/Enter Certification" class="input" type = "text" list = "Band type" name="Band type"> 
+      <datalist id = "Band type">
+        <option value="None">None</option><!-- Vondrea, leave the none here for certification,love you-->
+        <option value="12.0 MP">12.0 MP</option>
+        <option value="0.08 MP">0.08 MP</option>
+        <option value="0.1 MP">0.1 MP</option>
+        <option value="0.3 MP">0.3 MP</option>
+        <option value="0.5 MP">0.5 MP</option>
+        <option value="0.6 MP">0.6 MP</option>
+        <option value="1.0 MP">1.0 MP</option>
+        <option value="1.2 MP">1.2 MP</option>
+        <option value="1.3 MP">1.3 MP</option>
+        <option value="1.9 MP">1.9 MP</option>
+        <option value="2.0 MP">2.0 MP</option>
+        <option value="2.1 MP">2.1 MP</option>
+        <option value="2.3 MP">2.3 MP</option>
+        <option value="3.0 MP">3.0 MP</option>
+        <option value="3.1 MP">3.1 MP</option>
+        <option value="3.2 MP">3.2 MP</option>
+        <option value="3.5 MP">3.5 MP</option>
+        <option value="4.0 MP">4.0 MP</option>
+      </datalist>
+  </div>
+</div> 
+<!-- /////////////////////////////-->
+   <div class="doublerow">
+  <div class="doublecolumn left" style="">
+    <p>Face Color</p>
+ <input class="input" type = "text" list = "Face Color" name="Face Color"> 
+      <datalist id = "Face Color">
+        <option value="None">None</option>
+        <option value="12.0 MP">12.0 MP</option>
+        <option value="0.08 MP">0.08 MP</option>
+        <option value="0.1 MP">0.1 MP</option>
+        <option value="0.3 MP">0.3 MP</option>
+        <option value="0.5 MP">0.5 MP</option>
+
+      </datalist>
+  </div>
+  <div class="doublecolumn right" style="">
+    <p>Watch Shape</p>
+ <input class="input" type = "text" list = "Watch Shape" name="Watch Shape"> 
+      <datalist id = "Watch Shape">
+        <option value="None">None</option>
+        <option value="12.0 MP">12.0 MP</option>
+        <option value="0.08 MP">0.08 MP</option>
+      </datalist>
+  </div>
+</div>
+<!-- /////////////////////////////-->
+   <div class="doublerow">
+  <div class="doublecolumn left" style="">
+    <p>Features</p>
+  <input type="checkbox" name="vehicle" value="Bike"> I have a bike
+      <input type="checkbox" name="vehicle" value="Car"> I have a car<br>
+    <input type="checkbox" name="vehicle" value="Bike"> I have a bike
+  <input type="checkbox" name="vehicle" value="Car" > I have a car<br>
+    <input type="checkbox" name="vehicle" value="Bike"> I have a bike
+  <input type="checkbox" name="vehicle" value="Car" > I have a car<br>
+      <input type="checkbox" name="vehicle" value="Bike"> I have a bike
+      <input type="checkbox" name="vehicle" value="Car"> I have a car<br>
+    <input type="checkbox" name="vehicle" value="Bike"> I have a bike
+  <input type="checkbox" name="vehicle" value="Car" > I have a car<br>
+    <input type="checkbox" name="vehicle" value="Bike"> I have a bike
+  <input type="checkbox" name="vehicle" value="Car" > I have a car
+  </div>
+  <div class="doublecolumn right" style="">
+    <p>Extra Features</p>
+        <div class="multiselect">
+    <div class="selectBox" onclick="showCheckboxes()">
+      <select>
+        <option>Select features</option>
+      </select>
+      <div class="overSelect"></div>
+    </div>
+    <div id="checkboxes">
+      <label for="one">
+        <input type="checkbox" id="one" />First checkbox</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Second checkbox</label>
+      <label for="three">
+        <input type="checkbox" id="three" />Third checkbox</label>
+    </div>
+  </div>
+  </div>
+</div> 
+
+<!-- /////////////////////////////-->
+   <div class="doublerow">
+  <div class="doublecolumn left" style="">
+         <p>Manufacturer</p>
+ <input class="input" type = "text" list = "Manufacturer" name="Manufacturer"> 
+      <datalist id = "Manufacturer">
+        <option value="None">None</option>
+        <option value="12.0 MP">12.0 MP</option>
+        <option value="0.08 MP">0.08 MP</option>
+      </datalist>
+  </div>
+  <div class="doublecolumn right" style="">
+ 
+  </div>
+</div>   
+<!-- /////////////////////////////-->  
+<div class="textArea">
+ <p>Item description <span class="required">*</span></p>   
+   <textarea placeholder="Type item description here" rows="50" name="comment[text]" id="comment_text" cols="80"  autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"></textarea>   
+</div>
+<!-- /////////////////////////////-->
+   <div class="doublerow">
+  <div class="doublecolumn left" style="">
+    <p>Price</p>
+ <input class="input" type = "text"  name="cellularbrand"> 
+ 
+  </div>
+  <div class="doublecolumn right" style="">
+    <p>Quantity</p>
+<input class="input" type = "number"  name="Quantity"> 
+ <input style="width: 60px;" placeholder="Units" class="input" type = "text" list = "Units" name="Units"> 
+      <datalist id = "Units">
+        <option value="Single">Single</option>
+        <option value="Pairs">Pairs</option>
+        <option value="Packs">Packs</option>
+        <option value="Sets">Sets</option>
+      </datalist>
+  </div>
+</div>
+  <!-- /////////////////////////////-->
+   <div class="doublerow">
+       <p style="text-align: center">Payment options</p>
+  <div class="doublecolumn left" style="">
+    <p> Paypal</p>
+ <input placeholder="Insert paypal email" class="input" type = "text"  name="cellularbrand"> 
+ 
+  </div>
+  <div class="doublecolumn right" style="">
+    <p>Wipay</p>
+<input class="input" type = "text"  name="Quantity"> 
+  </div>
+</div>
+  <!-- /////////////////////////////-->
+   <div class="doublerow">
+       <p style="text-align: center">Return options</p>
+  <div class="doublecolumn left" style="">
+  <input type="checkbox" name="returns" value="Domestic "> Domestic returns accepted
+  </div>
+  <div class="doublecolumn right" style="">
+  <input type="checkbox" name="returns" value="International"> International returns accepted
+  </div>
+</div>
+  <!-- /////////////////////////////-->
+   <div class="doublerow">
+       <p style="text-align: center">Shipping</p>
+  <div class="doublecolumn left" style="">
+      <p>Shipping cost</p>
+       <input class="input" type = "text"  name="cellularbrand"> 
+  <input type="checkbox" name="returns" value="Free "> Free
+  </div>
+  <div class="doublecolumn right" style="">
+      <p>Handling Time</p>
+    <select class="input">
+        <option value="New">New</option>
+        <option value="Open box">Open box</option>
+        <option value="Manufactured refurbished">Manufactured refurbished</option>
+        <option value="Seller refurbished">Seller refurbished</option>
+        <option value="Used">Used</option>
+        <option value="For parts/not working">For parts/not working</option>
+        </select>
+  </div>
+</div>
+  <!-- /////////////////////////////-->
+   <div class="doublerow">
+  <div class="doublecolumn left" style="">
+      <p>Item location</p>
+       <input class="input" type = "text"  name="cellularbrand"> 
+  </div>
+  <div class="doublecolumn right" style="">
+      <p>Fees</p>
+  <p>0.00 jmb</p>
+  </div>
+</div>
+   <input class="submit" type="button" onclick="myFunction()" value="Submit form"> 
+    </form>
+
+     <!-- footer begin -->
+    <div class="rowFooter">
+  <div class="columnFooter">
+         <h3>SERVICE</h3>
+      <a href="#">Online Help</a><br/><br/>
+      <button class="button" data-modal="modalOne">Contact Us</button><br/><br/>
+      <a  href="#">Order Status</a><br/><br/>
+      <a  href="#">Change location</a><br/><br/>
+     <a href="#">Freguently ask question</a>
+  </div>
+  <div class="columnFooter" >
+         <h3>Policies</h3>
+      <a href="#">Terms of Use</a><br/><br/>
+      <a href="#">Privacy Policy</a><br/><br/>
+      <a href="#">Refund Policy</a><br/><br/>
+      <a href="#">Billing System</a>
+  </div>
+  <div class="columnFooter" id="columnFooter3" >
+      <h3>Get to know Us</h3>
+      <a href="#">About Us</a><br/><br/>
+      <a href="#">How to Sell on Emerc</a><br/><br/>
+      <a href="#">Our payment Option</a>
+  </div>
+	<div class="bottomcontainer">
+				<div class="">
+					<div id="logos" > 
+                    <a id="facebook" href="#" style="padding: 5px;padding-right: 5px;"><img src="pictures/icons8-facebook-64.png"   /></a>
+                    <a id="instagram" href="#" style="padding: 5px;"><img src="pictures/icons8-instagram-48.png"   /></a>
+                        <p class="pull-left">© 2019 Emerc. All rights reserved.</p>
+                    </div>
+				</div>
+           </div>
+</div>
+</body>
+    <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+         <!-- jvascript for popup contact us -->
+    <script>
+      var modalBtns = [...document.querySelectorAll(".button")];
+      modalBtns.forEach(function(btn){
+        btn.onclick = function() {
+          var modal = btn.getAttribute('data-modal');
+          document.getElementById(modal).style.display = "block";
+        }
+      });
+      
+      var closeBtns = [...document.querySelectorAll(".close")];
+      closeBtns.forEach(function(btn){
+        btn.onclick = function() {
+          var modal = btn.closest('.modal');
+          modal.style.display = "none";
+        }
+      });
+      
+      window.onclick = function(event) {
+        if (event.target.className === "modal") {
+          event.target.style.display = "none";
+        }
+      }
+    </script>
+     <!--+disable control+u-->
+    <script type="text/javascript">
+    function mousehandler(e) {
+        var myevent = (isNS) ? e : event;
+        var eventbutton = (isNS) ? myevent.which : myevent.button;
+        if ((eventbutton == 2) || (eventbutton == 3)) return false;
+    }
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+    function disableCtrlKeyCombination(e) {
+        var forbiddenKeys = new Array("a", "s", "c", "x","u");
+        var key;
+        var isCtrl;
+        if (window.event) {
+            key = window.event.keyCode;
+            //IE
+            if (window.event.ctrlKey)
+                isCtrl = true;
+            else
+                isCtrl = false;
+        }
+        else {
+            key = e.which;
+            //firefox
+            if (e.ctrlKey)
+                isCtrl = true;
+            else
+                isCtrl = false;
+        }
+        if (isCtrl) {
+            for (i = 0; i < forbiddenKeys.length; i++) {
+                //case-insensitive comparation
+                if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+</script>
+ <!--+ dropdown check boxes-->
+  <script type="text/javascript">
+
+var expanded = false;
+
+function showCheckboxes() {
+  var checkboxes = document.getElementById("checkboxes");
+  if (!expanded) {
+    checkboxes.style.display = "block";
+    expanded = true;
+  } else {
+    checkboxes.style.display = "none";
+    expanded = false;
+  }
+}
+    </script>
+</html>

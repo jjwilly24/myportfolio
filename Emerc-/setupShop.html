@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http--equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="index-style.css">
+     <link rel="stylesheet" href="css/sell.css">
+    <link rel="stylesheet" href="css/contact_us.css">
+    <link rel="stylesheet" href="css/setupShop.css">
+    <link rel="stylesheet" href="css/formPopup.css">
+     <!-- Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+     
+    <title>Setup shop</title>
+</head>    
+<body>
+  <a href="#" id="scroll" style="display: none;"><span></span></a>
+<section id="section1">
+    <a href="#">Help and contact</a>
+    <a href="#">Today deals</a>
+    <a href="#">Recently view</a>
+    <a href="#">Summary</a>
+    <a href="#">Listing</a>
+    <a href="#">Sell</a>  
+    <div id="logos"> 
+        <a id="cart" href="#" style="padding: 5px;padding-right: 5px"><img src="pictures/icons8-shopping-cart-26.png"   /></a>
+        <a id="message" href="#" style="padding: 5px;"><img src="pictures/icons8-new-post-24.png"   /></a> 
+        </div>
+     <div class="navbar">
+  <div id="logOn" style="display: none;">
+  <div  class="dropdown">
+    <button class="dropbtn">
+    </button>
+    <div class="dropdown-content">
+        <ul  style="list-style: none;  " class="userName">
+        
+    </ul>
+    </div>
+  </div> 
+</div>
+
+<div id="logOff" style="display: none;">
+  <div  class="dropdown">
+    <button class="dropbtn">
+    </button>
+    <div class="dropdown-content">
+        <ul  style="list-style: none;  " class="userName">
+        
+    </ul>
+    </div>
+  </div> 
+</div> 
+</div>
+    </section>
+<!-- popup signin and signup -->
+<div class="form-popup" id="myForm">
+<div style="text-align: center"><P style="display: none;" id="incorrect_Entry">Wrong password or username!</P></div>
+  <form id="login-form" class="form-container">
+      <button type="button" class="cancel" onclick="closeForm()"><img class="close" src="https://img.icons8.com/material-rounded/24/000000/cancel.png"/></button>
+    <h1>Sign in</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input id="log-email" type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input id="log-password" type="password" placeholder="Enter Password" name="psw" required>
+    
+    <button onclick="login()" type="submit" class="popupButton btn1">Sign in</button>
+    <button onclick="openForm2()" class="popupButton btn2">Sign up</button>
+      <a style="cursor: pointer;text-decoration: none">Forgot your password?</a>
+  </form>
+</div> 
+    
+<!-- popup signin and signup -->
+<div class="form-popup" id="mySignup">
+ <div style="text-align: center"><P style="display: none;" id="emailExist">Email already exist!</P></div>
+  <form id="signup-form" class="form-container">
+      <button type="button" class="cancel" onclick="closeForm2()"><img class="close" src="https://img.icons8.com/material-rounded/24/000000/cancel.png"/></button>
+    <h1>Sign up</h1>
+      <label for="firstname"><b>First name</b></label>
+    <input id="txtFirstName" type="text" placeholder="Enter First name" name="firstname" required>
+      
+       <label for="lastName"><b>Last name</b></label>
+    <input id="txtLastName" type="text" placeholder="Enter Last name" name="lastname" required>
+      
+    <label for="email"><b>Email</b></label>
+    <input id="txtEmail" type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" name="psw"placeholder="At least 8 characters" id="txtPassword"
+  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+    
+    <button onclick="openForm()" class="popupButton btn1">Sign in</button>
+    <button onclick="signup()"class="popupButton btn2">Sign up</button>
+      <a style="cursor: pointer;text-decoration: none">Forgot your password?</a>
+  </form>
+</div> 
+    
+    
+    <hr id="hr1">
+    <!-- responsive 1 -->
+     <div id="logos1"> 
+        <a id="cart" href="#" style="padding: 5px;padding-right: 5px"><img src="pictures/icons8-shopping-cart-26.png"/></a>
+         <a id="cart" href="#" style="padding: 5px;"><img src="pictures/icons8-contacts-24.png"   /></a>
+        <a id="message" href="#" style="padding: 5px;"><img src="pictures/icons8-new-post-24.png"   /></a> 
+        </div>
+    
+<section id="section2">
+    <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">Electronics</a>
+    <a href="#">Appliance</a>
+    <a href="#">Beauty and personal</a>
+    <a href="#">Kitchen and home</a>
+    <a href="#">Fashion</a>
+    <a href="#">Recently view</a>
+    <a href="#">Deals</a>
+  </div>
+</div>
+    <span class="mobileMenu" style="font-size:30px;cursor:pointer;float: left;padding: 5px;margin-top: 6px;" onclick="openNav()">&#9776;</span>
+     <a  href="index.html" style="text-align: left"><img class="emerc" src="logo.png"></a>
+
+    <hr>
+   </section> 
+    
+            <!-- image -->
+<div style="text-align: center">
+<h3> Click arrow to upload store image or logo</h3>
+<input style="display:none;" type="file" name="shopImage" id="shopImage" accept="image/*" >
+<button type="button" ><img class="button-arrow" src="pictures/up-arrow.png"/></button>
+</div>
+<div class="image-preview" id="imagePreview">
+<img src="" alt="shop profile image" class="image-preview__image">
+<span class="image-preview__default-text">Shop Profile Image will Upload Here </span>
+</div>
+    
+    <form id="SellerStore">
+    <div style="text-align: center">
+ <!-- store name -->
+<input class="storeName" placeholder="Enter store name here" type="text" value="" id="storeName" required/>
+</div>
+
+<!-- text area -->
+<div style="text-align: center">
+<h3> Enter description of your store below </h3>
+</div>
+<div class="textArea">
+   <textarea minlength="300" maxlength="500" placeholder="Type store description here....Make it interesting" rows="50" name="comment[text]" id="StoreDescription" cols="80"  autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" required></textarea>   
+</div>
+    
+<div style="text-align: center; margin-bottom: 20px">
+    <button class="openShop" onclick="openShop()" >Open shop</button>
+</div>
+   </form> 
+       <!-- footer begin -->
+    <div class="rowFooter">
+  <div class="columnFooter">
+         <h3>SERVICE</h3>
+      <a href="#">Online Help</a><br/><br/>
+      <button class="button" data-modal="modalOne">Contact Us</button><br/><br/>
+      <a  href="#">Order Status</a><br/><br/>
+      <a  href="#">Change location</a><br/><br/>
+     <a href="#">Freguently ask question</a>
+  </div>
+  <div class="columnFooter" >
+         <h3>Policies</h3>
+      <a href="#">Terms of Use</a><br/><br/>
+      <a href="#">Privacy Policy</a><br/><br/>
+      <a href="#">Refund Policy</a><br/><br/>
+      <a href="#">Billing System</a>
+  </div>
+  <div class="columnFooter" id="columnFooter3" >
+      <h3>Get to know Us</h3>
+      <a href="#">About Us</a><br/><br/>
+      <a href="#">How to Sell on Emerc</a><br/><br/>
+      <a href="#">Our payment Option</a>
+  </div>
+	<div class="bottomcontainer">
+				<div class="">
+					<div id="logos" > 
+                    <a id="facebook" href="#" style="padding: 5px;padding-right: 5px;"><img src="pictures/icons8-facebook-64.png"   /></a>
+                    <a id="instagram" href="#" style="padding: 5px;"><img src="pictures/icons8-instagram-48.png"   /></a>
+                        <p class="pull-left">© 2019 Emerc. All rights reserved.</p>
+                    </div>
+				</div>
+           </div>
+</div>
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-storage.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+
+<script type="text/javascript" src="js/init.js"></script>
+    
+<script type="text/javascript" src="js/auth.js"> </script>
+<script type="text/javascript"  src="js/minorPages.js"></script>
+<script type="text/javascript"  src=js/setupShop.js></script>
+ <!-- Latest jQuery form server -->
+ <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script>
+        document.querySelector('.button-arrow').addEventListener('click', () => {
+  document.querySelector('input[type="file"]').click();
+});
+</script>
+    
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+  </script>
+           <!-- jvascript for popup contact us -->
+      <script>
+        var modalBtns = [...document.querySelectorAll(".button")];
+        modalBtns.forEach(function(btn){
+          btn.onclick = function() {
+            var modal = btn.getAttribute('data-modal');
+            document.getElementById(modal).style.display = "block";
+          }
+        });
+        
+        var closeBtns = [...document.querySelectorAll(".close")];
+        closeBtns.forEach(function(btn){
+          btn.onclick = function() {
+            var modal = btn.closest('.modal');
+            modal.style.display = "none";
+          }
+        });
+        
+        window.onclick = function(event) {
+          if (event.target.className === "modal") {
+            event.target.style.display = "none";
+          }
+        }
+    </script>
+<!-- popup form for sign in and sign up -->
+    <script>
+
+</script>
+    
+</body>
+   
+</html>

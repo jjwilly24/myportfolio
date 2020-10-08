@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http--equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="css/contact_us.css">
+    <link rel="stylesheet" href="css/messageInbox.css">
+
+    
+     <!-- Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+     
+    <title>Inbox</title>
+</head>    
+<body onload="iniateMessage()" >
+  <a href="#" id="scroll" style="display: none;"><span></span></a>
+<section id="section1">
+    <a href="#">Help and contact</a>
+    <a href="#">Today deals</a>
+    <a href="#">Recently view</a>
+    <a href="#">Summary</a>
+    <a href="#">Listing</a>
+    <a href="#">Sell</a>  
+    <div id="logos"> 
+        <a class="notification" id="cart" href="#" style="padding: 5px;padding-right: 5px;">
+            <span><img src="pictures/icons8-shopping-cart-26.png"   /></span>
+            <span id="badgeCart" class="cartNoti">0</span>
+        </a>
+        <a class="notification" id="cart" href="#" style="padding: 5px;">
+             <span><img src="pictures/icons8-contacts-24.png"   /></span>
+             <span id="badgeAl" class="alertNoti">0</span>
+         </a>
+        <a class="notification" id="messageIcon" href="#" style="padding: 5px;">
+        <span><img src="pictures/icons8-new-post-24.png"   /></span>
+        <span  id="badgeMsg" class="messageNoti"></span>
+        </a> 
+        </div>
+     <div class="navbar">
+  <div id="logOn" style="display: none;">
+  <div  class="dropdown">
+    <button class="dropbtn">
+    </button>
+    <div class="dropdown-content">
+        <ul  style="list-style: none;  " class="userName">
+        
+    </ul>
+    </div>
+  </div> 
+</div>
+
+<div id="logOff" style="display: none;">
+  <div  class="dropdown">
+    <button class="dropbtn">
+    </button>
+    <div class="dropdown-content">
+        <ul  style="list-style: none;  " class="userName">
+        
+    </ul>
+    </div>
+  </div> 
+</div> 
+</div>
+    </section>
+    
+    <hr id="hr1">
+    <!-- responsive 1 -->
+     <div id="logos1"> 
+        <a class="notification" id="cart" href="#" style="padding: 5px;padding-right: 5px">
+            <span><img src="pictures/icons8-shopping-cart-26.png"/></span>
+            <span id="badgeCart" class="cartNoti">0</span>
+         </a>
+         <a class="notification" id="cart" href="#" style="padding: 5px;">
+             <span><img src="pictures/icons8-contacts-24.png"   /></span>
+             <span id="badgeAl" class="alertNoti">0</span>
+         </a>
+        <a class="notification" id="messageIcon" href="#" style="padding: 5px;">
+            <span><img src="pictures/icons8-new-post-24.png"/></span>
+            <span id="badgeMsg" class="messageNoti">0</span>
+         </a> 
+        </div>
+    
+<section id="section2">
+    <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"style="background-color: transparent">&times;</a>
+  <div class="overlay-content">
+    <a href="#">Electronics</a>
+    <a href="#">Appliance</a>
+    <a href="#">Beauty and personal</a>
+    <a href="#">Kitchen and home</a>
+    <a href="#">Fashion</a>
+    <a href="#">Recently view</a>
+    <a href="#">Deals</a>
+  </div>
+</div>
+    <span class="mobileMenu" style="font-size:30px;cursor:pointer;float: left;padding: 5px;margin-top: 6px;" onclick="openNav()">&#9776;</span>
+     <a  href="index.html"><img class="emerc" src="logo.png"></a>
+
+    
+   </section> 
+        <!-- popup for contact -->
+    <div id="modalOne" class="modal">
+      <div class="modal-content">
+        <a class="close">&times;</a>
+        <div class="contact-form">
+          <form class="form" action="/">
+            <h2 style="text-align: center">Contact Us</h2>
+            <div class="inputfield">
+              <input class="fname" type="text" name="name" placeholder="Full name">
+              <input type="text" name="name" placeholder="Email">
+              <input type="text" name="name" placeholder="Phone number">
+            </div>
+            <span>Message</span>
+            <div>
+              <textarea rows="4"></textarea>
+            </div>
+            <button type="submit" href="/">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+<!--recieved messages -->
+<div id="messageContainer" class="messageContainer" >
+    <p>Messages</p>
+ <table style="table-layout:fixed;padding-top: 10px;background-color: #7EBFE7;" >
+    <tr>
+    <col width="50px" />
+    <col width="50px" />
+    <col width="50px" />
+    <col width="50px" />
+      <th class="highLight" style="padding-top: 20px"><a onclick="highlightRecieved()" id="recieved" style="font-size: 14px;cursor: pointer;color:#184576;background-color:#7EBFE7;">Inbox</a></th>
+      <th class="highLight" style="padding-top: 20px"><a  onclick="highlightSend()" id="send"style="font-size: 14px;cursor: pointer;background-color:#7EBFE7;">Sent Messages</a></th>
+      <th ><img  id="binRec"  onclick="deleteRecMsg()" style="cursor: pointer;display: none" src="pictures/icons8-delete-trash-24.png"/>
+          <img id="binSend"  onclick="deleteSendMsg()" style="cursor: pointer;display: none" src="pictures/icons8-delete-trash-24.png"/>
+        </th>
+      <th></th>
+    </tr>
+  </table>
+<div id="recMsg">
+  <table  id="displayRec" class="displayRec">
+    <col width="5%" />
+    <col width="25%" />
+    <col width="35%" />
+    <col width="35%" />
+
+  </table>
+    </div>
+<!--send messages -->
+    <div id="sendMsg" style="display:none; ">
+   <table id="displaySend" class="displaySend" >
+    <col width="5%" />
+    <col width="25%" />
+    <col width="35%" />
+    <col width="35%" />
+  </table>
+        </div>
+</div>
+
+
+  <!-- footer begin -->
+    <div class="rowFooter">
+  <div class="columnFooter">
+         <h3>SERVICE</h3>
+      <a href="#">Online Help</a><br/><br/>
+      <button class="button" data-modal="modalOne">Contact Us</button><br/><br/>
+      <a  href="#">Order Status</a><br/><br/>
+      <a  href="#">Change location</a><br/><br/>
+     <a href="#">Freguently ask question</a>
+  </div>
+  <div class="columnFooter" >
+         <h3>Policies</h3>
+      <a href="#">Terms of Use</a><br/><br/>
+      <a href="#">Privacy Policy</a><br/><br/>
+      <a href="#">Refund Policy</a><br/><br/>
+      <a href="#">Billing System</a>
+  </div>
+  <div class="columnFooter" id="columnFooter3" >
+      <h3>Get to know Us</h3>
+      <a href="#">About Us</a><br/><br/>
+      <a href="#">How to Sell on Emerc</a><br/><br/>
+      <a href="#">Our payment Option</a>
+  </div>
+	<div class="bottomcontainer">
+				<div class="">
+					<div id="logos" > 
+                    <a id="facebook" href="#" style="padding: 5px;padding-right: 5px;"><img src="pictures/icons8-facebook-64.png"   /></a>
+                    <a id="instagram" href="#" style="padding: 5px;"><img src="pictures/icons8-instagram-48.png"   /></a>
+                        <p class="pull-left">© 2019 Emerc. All rights reserved.</p>
+                    </div>
+				</div>
+           </div>
+</div>
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+
+<script type="text/javascript" src="js/init.js"></script>
+    
+<script type="text/javascript" src="js/auth.js"> </script>
+<script type="text/javascript"  src="js/minorPages.js"></script>
+<script type="text/javascript"  src="js/messageInbox.js"></script>
+ <!-- Latest jQuery form server -->
+ <script src="https://code.jquery.com/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+  </script>
+           <!-- jvascript for popup contact us -->
+      <script>
+        var modalBtns = [...document.querySelectorAll(".button")];
+        modalBtns.forEach(function(btn){
+          btn.onclick = function() {
+            var modal = btn.getAttribute('data-modal');
+            document.getElementById(modal).style.display = "block";
+          }
+        });
+        
+        var closeBtns = [...document.querySelectorAll(".close")];
+        closeBtns.forEach(function(btn){
+          btn.onclick = function() {
+            var modal = btn.closest('.modal');
+            modal.style.display = "none";
+          }
+        });
+        
+        window.onclick = function(event) {
+          if (event.target.className === "modal") {
+            event.target.style.display = "none";
+          }
+        }
+      </script>
+    <script>
+function highlightRecieved() {
+  document.getElementById("recieved").style.color  = '#184576';
+  document.getElementById("send").style.color  = 'black';
+  document.getElementById("recMsg").style.display = "block";
+  document.getElementById("binRec").style.display = "none";
+  document.getElementById("sendMsg").style.display = "none";
+  document.getElementById("binSend").style.display = "none";
+  
+}
+function highlightSend() {
+document.getElementById("recieved").style.color  = 'black';
+document.getElementById("send").style.color  = '#184576';
+document.getElementById("recMsg").style.display = "none";
+ document.getElementById("binRec").style.display = "none";
+ document.getElementById("sendMsg").style.display = "block";
+ document.getElementById("binSend").style.display = "none";
+}
+    </script>
+</body>
+   
+</html>

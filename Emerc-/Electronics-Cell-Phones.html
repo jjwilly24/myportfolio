@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http--equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="css/contact_us.css">
+    <link rel="stylesheet" href="css/Listing.css">
+     <!-- Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+     
+    <title>Create listing</title>
+</head>    
+<!--<body oncontextmenu="return false" >-->
+<body>
+  <a href="#" id="scroll" style="display: none;"><span></span></a>
+<section id="section1">
+    <a href="#">Help and contact</a>
+    <a href="#">Today deals</a>
+    <a href="#">Recently view</a>
+    <a href="#">Summary</a>
+    <a href="#">Listing</a>
+    <a href="#">Sell</a>  
+    <div id="logos"> 
+        <a id="cart" href="#" style="padding: 5px;padding-right: 5px"><img src="pictures/icons8-shopping-cart-26.png"   /></a>
+        <a id="message" href="#" style="padding: 5px;"><img src="pictures/icons8-new-post-24.png"   /></a> 
+        </div>
+     <div class="navbar">
+  <div class="dropdown">
+    <button class="dropbtn">Hello <strong>Joey</strong>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Joey Williamson<img style="padding-left: 5px" src="pictures/icons8-contacts-24.png"  /></a>
+      <a href="#">Account setting</a>
+      <a href="#">Sign out</a>
+      <a href="#">Become a member</a>
+    </div>
+  </div> 
+</div>
+    </section>
+    <hr id="hr1">
+    <!-- responsive 1 -->
+     <div id="logos1"> 
+        <a id="cart" href="#" style="padding: 5px;padding-right: 5px"><img src="pictures/icons8-shopping-cart-26.png"/></a>
+         <a id="cart" href="#" style="padding: 5px;"><img src="pictures/icons8-contacts-24.png"   /></a>
+        <a id="message" href="#" style="padding: 5px;"><img src="pictures/icons8-new-post-24.png"   /></a> 
+        </div>
+    
+<section id="section2">
+    <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">Electronics</a>
+    <a href="#">Appliance</a>
+    <a href="#">Beauty and personal</a>
+    <a href="#">Kitchen and home</a>
+    <a href="#">Fashion</a>
+    <a href="#">Recently view</a>
+    <a href="#">Deals</a>
+  </div>
+</div>
+    <span class="mobileMenu" style="font-size:30px;cursor:pointer;float: left;padding: 5px;margin-top: 6px;" onclick="openNav()">&#9776;</span>
+     <a  href="index.html" style="float: left"><img class="emerc" style=""src="logo.png"></a>
+    <div class="wrap">
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="Search Ecomerce merchandise">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+   </div>
+</div>    <div class="dropdown1">
+  <button class="dropbutton">Category
+        <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown1-content">
+    <a href="#">Videos games</a>
+    <a href="#">Men fashion</a>
+    <a href="#">woman fashion</a>
+    <a href="#"> Boy fashion</a>
+    <a href="#">Girl fashion</a>
+    <a href="#">Luggage</a>
+    <a href="#">Health and household</a>
+    <a href="#">Sport and outdoor</a>
+    <a href="#">Others</a>
+  </div>
+</div>
+    <hr>
+    </section>
+     <!-- popup for contact -->
+    <div id="modalOne" class="modal">
+      <div class="modal-content">
+        <a class="close">&times;</a>
+        <div class="contact-form">
+          <form class="form" action="/">
+            <h2 style="text-align: center">Contact Us</h2>
+            <div class="inputfield">
+              <input class="fname" type="text" name="name" placeholder="Full name">
+              <input type="text" name="name" placeholder="Email">
+              <input type="text" name="name" placeholder="Phone number">
+            </div>
+            <span>Message</span>
+            <div>
+              <textarea rows="4"></textarea>
+            </div>
+            <button type="submit" href="/">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+<!-- main content -->
+    <form>
+        <!-- /////////////////////////////-->
+ <div class="outerlayer">
+  <div class="Names" style="">
+    <div>
+         <label for="name">Category<span class="required">*</span></label>
+       </div>
+  </div>
+
+  <div class="inputs" style="">
+       <label>Electronics > cellphones</label>
+  </div>
+</div>
+       <div class="outerlayer">
+  <div class="Names" style="">
+    <div>
+        <label  for="name">Product title<span class="required">*</span></label><br>
+       </div>
+  </div>
+  <div class="inputs" style="">
+        <p>Product title<span class="required">*</span></p>
+        <input class="input" id="name" type="text" maxlength="80" />
+  </div>
+</div>
+    <!-- /////////////////////////////-->
+    <div class="outerlayer">
+  <div class="Names" style="">
+    <div>
+        <label  for="name">ISBN<span class="required">*</span></label><br>
+       </div>
+  </div>
+  <div class="inputs" style="">
+        <p>ISBN<span class="required">*</span></p>
+        <input placeholder="Enter UPC/EAN/ISBN" class="input" id="name" type="text" />
+  </div>
+</div>
+ <!-- /////////////////////////////-->
+ <div class="outerlayer">
+  <div class="Names" style="">
+    <div>
+         <label for="name">Condition<span class="required">*</span></label>
+       </div>
+  </div>
+  <div class="inputs" style="">
+        <p>Condition<span class="required">*</span></p>
+        <select class="input">
+        <option value="New">New</option>
+        <option value="Open box">Open box</option>
+        <option value="Manufactured refurbished">Manufactured refurbished</option>
+        <option value="Seller refurbished">Seller refurbished</option>
+        <option value="Used">Used</option>
+        <option value="For parts/not working">For parts/not working</option>
+        </select>
+  </div>
+</div>
+ <!-- /////////////////////////////-->
+<div class="image">
+    
+    <div class="grid-x grid-padding-x">
+  <div class="small-10 small-offset-1 medium-8 medium-offset-2 cell">
+    <h1>Multiple Image File Upload with Preview</h1>
+    <form action="upload_file.php" id="img-upload-form" method="post" enctype="multipart/form-data">
+      <p>
+       
+        <input class="show-for-sr" type="file" id="upload_imgs" name="upload_imgs[]" maxlength = "5"/>
+      </p>
+      <div class="quote-imgs-thumbs quote-imgs-thumbs--hidden" id="img_preview" aria-live="polite"></div>
+      <p>
+        <input class="button large expanded" type="submit" name="submit" value="Upload Images"/>
+      </p>
+    </form>
+  </div>
+</div>
+</div>
+<!-- /////////////////////////////-->
+   <div class="doublerow">
+  <div class="doublecolumn left" style="">
+    <p>Brand</p>
+          <input placeholder="Select/Enter Brand" class="input" type = "text" list = "Brand" name="Brand"> 
+      <datalist id = "Brand">
+        <option value="Unbranded">Unbranded</option>
+        <option value="Apple">Apple</option>
+        <option value="Samsung">Samsung</option>
+        <option value="LG">LG</option>
+        <option value="Google">Google</option>
+        <option value="Motorola">Motorola</option>
+        <option value="Blackberry">Blackberry</option>
+        <option value="OnePlus">OnePlus</option>
+        <option value="HTC">HTC</option>
+        <option value="Kyocera">Kyocera</option>
+        <option value="Huawei">Huawei</option>
+        <option value="ZTE">ZTE</option>
+        <option value="Essential">Essential</option>
+        <option value="Sony">Sony</option>
+        <option value="Nokia">Nokia</option>
+        <option value="Casio">Casio</option>
+        <option value="ASUS">ASUS</option>
+        <option value="Razer">Razer</option>
+        <option value="BLU">BLU</option>
+        <option value="Xiaomi">Xiaomi</option>
+        <option value="Amazon">Amazon</option>
+        <option value="LeTV">LeTV</option>
+        <option value="Pantech">Pantech</option>
+        <option value="Microsoft">Microsoft</option>
+        <option value="Vertu">Vertu</option>
+        <option value="CAT">CAT</option>
+        <option value="Kodak">Kodak</option>
+        <option value="Lenovo">Lenovo</option>
+        <option value="Sonim">Sonim</option>
+        <option value="Palm">Palm</option>
+        <option value="Nextbit">Nextbit</option>
+        <option value="Sony Ericsson">Sony Ericsson</option>
+        <option value="Honor">Honor</option>
+        <option value="T-Mobile">T-Mobile</option>
+        <option value="Alcatel">Alcatel</option>
+        <option value="SANYO">SANYO</option>
+        <option value="Elephone">Elephone</option>
+        <option value="Sharp">Sharp</option>
+        <option value="OUKITEL">OUKITEL</option>
+        <option value="Blackview">Blackview</option>
+        <option value="MEIZU">MEIZU</option>
+        <option value="GreatCall">GreatCall</option>
+        <option value="DOOGEE">DOOGEE</option>
+        <option value="OPPO">OPPO</option>
+        <option value="Ulefone">Ulefone</option>
+        <option value="Snapfon">Snapfon</option>
+        <option value="LEAGOO">LEAGOO</option>
+        <option value="Coolpad">Coolpad</option>
+        <option value="NUU">NUU</option>
+        <option value="Fujitsu">Fujitsu</option>
+        <option value="3Q">3Q</option>
+        <option value="Sprint">Sprint</option>
+       
+      </datalist>
+  </div>
+  <div class="doublecolumn right" style="">
+  </div>
+</div> 
+ <!-- /////////////////////////////-->
+   <div class="doublerow">
+  <div class="doublecolumn left" style="">
+    <p>Camera resolution</p>
+          <input class="input" type = "text" list = "resolution" name="resolution"> 
+      <datalist id = "resolution">
+        <option value="None">None</option>
+        <option value="12.0 MP">12.0 MP</option>
+        <option value="0.08 MP">0.08 MP</option>
+        <option value="0.1 MP">0.1 MP</option>
+        <option value="0.3 MP">0.3 MP</option>
+        <option value="0.5 MP">0.5 MP</option>
+        <option value="0.6 MP">0.6 MP</option>
+        <option value="1.0 MP">1.0 MP</option>
+        <option value="1.2 MP">1.2 MP</option>
+        <option value="1.3 MP">1.3 MP</option>
+        <option value="1.9 MP">1.9 MP</option>
+        <option value="2.0 MP">2.0 MP</option>
+        <option value="2.1 MP">2.1 MP</option>
+        <option value="2.3 MP">2.3 MP</option>
+        <option value="3.0 MP">3.0 MP</option>
+        <option value="3.1 MP">3.1 MP</option>
+        <option value="3.2 MP">3.2 MP</option>
+        <option value="3.5 MP">3.5 MP</option>
+        <option value="4.0 MP">4.0 MP</option>
+        <option value="5.0 MP">5.0 MP</option>
+        <option value="5.1 MP">5.1 MP</option>
+        <option value="6.7 MP">6.7 MP</option>
+        <option value="8.0 MP">8.0 MP</option>
+        <option value="8.1 MP">8.1 MP</option>
+        <option value="8.7 MP">8.7 MP</option>
+        <option value="10.0 MP">10.0 MP</option>
+        <option value="11.0 MP">11.0 MP</option>
+        <option value="12.0 MP">12.0 MP</option>
+        <option value="12.1 MP">12.1 MP</option>
+        <option value="12.2 MP">12.2 MP</option>
+        <option value="12.3 MP">12.3 MP</option>
+        <option value="12.6 MP">12.6 MP</option>
+        <option value="13.0 MP">13.0 MP</option>
+        <option value="13.1 MP">13.1 MP</option>
+        <option value="13.2 MP">13.2 MP</option>
+        <option value="14.0 MP">14.0 MP</option>
+        <option value="15.0 MP">15.0 MP</option>
+        <option value="16.0 MP">16.0 MP</option>
+        <option value="17.0 MP">17.0 MP</option>
+        <option value="18.0 MP">18.0 MP</option>
+        <option value="32.0 MP">32.0 MP</option>
+        <option value="32 MP">32 MP</option>
+        <option value="19.0 MP">19.0 MP</option>
+        <option value="20.0MP">20.0 MP</option>
+        <option value="20.7 MP">20.7 MP</option>
+        <option value="21.0 MP">21.0 MP</option>
+        <option value="21.5 MP">21.5 MP</option>
+        <option value="22.5 MP">22.5 MP</option>
+        <option value="23.0 MP">23.0 MP</option>
+        <option value="24.0 MP">24.0 MP</option>
+        <option value="25.0 MP">25.0 MP</option>
+        <option value="40.0 MP">40.0 MP</option>
+        <option value="41.0 MP">41.0 MP</option>
+        <option value="48.0 MP">48.0 MP</option>
+      </datalist>
+  </div>
+  <div class="doublecolumn right" style="">
+    <p>Sim card slot</p>
+         <input class="input" type = "text" list = "cardslot" name="cardslot"> 
+      <datalist id = "cardslot">
+        <option value="None">None</option>
+        <option value="Single Sim">Single Sim</option>
+        <option value="Dual Sim">Dual Sim</option>
+        <option value="Triple Sim">Triple Sim</option>
+        <option value="Quad Sim">Quad Sim</option>
+         </datalist>
+  </div>
+</div> 
+<!-- /////////////////////////////-->
+   <div class="doublerow">
+  <div class="doublecolumn left" style="">
+    <p>Features</p>
+  <input type="checkbox" name="vehicle" value="Bike">3D Depth Camera
+      <input type="checkbox" name="vehicle" value="Car">3G Data Capable<br>
+    <input type="checkbox" name="vehicle" value="Bike">4G Data Capable
+  <input type="checkbox" name="vehicle" value="Car" >4K Video Recording<br>
+    <input type="checkbox" name="vehicle" value="Bike">Active Edge
+  <input type="checkbox" name="vehicle" value="Car" >AMOLED Display<br>
+      <input type="checkbox" name="vehicle" value="Bike">ANT+
+      <input type="checkbox" name="vehicle" value="Car">3D Depth Sensor<br>
+    <input type="checkbox" name="vehicle" value="Bike">Accelerometer
+  <input type="checkbox" name="vehicle" value="Car" >Ambient Light Sensor<br>
+  </div>
+  <div class="doublecolumn right" style="">
+    <p>Extra Features</p>
+        <div class="multiselect">
+    <div class="selectBox" onclick="showCheckboxes()">
+      <select onfocus='this.size=5;'onblur='this.size=1;' onchange='this.size=1; this.blur();'>
+        <option>Select Features</option>
+      </select>
+      <div  class="overSelect"></div>
+    </div>
+    <div  id="checkboxes">
+      <label for="one">
+        <input type="checkbox" id="one" />Camera</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Digital Compass</label>
+      <label for="three">
+        <input type="checkbox" id="three" />Active Edge</label>
+        <label for="one">
+        <input type="checkbox" id="one" />Bluetooth Enabled</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Color Screen</label>
+      <label for="three">
+        <input type="checkbox" id="three" />Color Tempreture Sensor</label>
+        <label for="one">
+        <input type="checkbox" id="one" />Digital Compass</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Dual Front Camera</label>
+      <label for="three">
+        <input type="checkbox" id="three" />Dual Rear Cameras</label>
+        <label for="one">
+        <input type="checkbox" id="one" />Dual Screen</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Dust-Resistant</label>
+      <label for="three">
+        <input type="checkbox" id="three" />E-compass</label>
+        <label for="one">
+        <input type="checkbox" id="one" />EDGE</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Email,Web</label>
+      <label for="three">
+        <input type="checkbox" id="three" />Email Access</label>
+        <label for="one">
+        <input type="checkbox" id="one" />eSIM</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Facial Recognition</label>
+      <label for="three">
+        <input type="checkbox" id="three" />Fast Charging</label>
+        <label for="one">
+        <input type="checkbox" id="one" />Fast Wireless Charging</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Fingerprint Sensor</label>
+      <label for="three">
+        <input type="checkbox" id="three" />FM Radio</label>
+        <label for="one">
+        <input type="checkbox" id="one" />Front Camera</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Geomagnetic sensor</label>
+      <label for="three">
+        <input type="checkbox" id="three" />Geotagging</label>
+        <label for="one">
+        <input type="checkbox" id="one" />Global Ready</label>
+      <label for="two">
+        <input type="checkbox" id="two" />GPRS</label>
+      <label for="three">
+        <input type="checkbox" id="three" />GPS</label>
+        <label for="one">
+        <input type="checkbox" id="one" />Gyro Sensor</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Hall Effect Sensor</label>
+      <label for="three">
+        <input type="checkbox" id="three" />HDR10+</label>
+        <label for="one">
+        <input type="checkbox" id="one" />HDR Display</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Heart Rate Monitoring</label>
+      <label for="three">
+        <input type="checkbox" id="three" />Heat Pipe Cooling</label>
+        <label for="one">
+        <input type="checkbox" id="one" />High Capacity Battery (5000 mAh or More)</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Infinity-O Display</label>
+      <label for="three">
+        <input type="checkbox" id="three" />Infrared</label>
+        <label for="one">
+        <input type="checkbox" id="one" />Internet Connectivity</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Iris Scanning</label>
+      <label for="three">
+        <input type="checkbox" id="three" />Java Enabled</label>
+        <label for="one">
+        <input type="checkbox" id="one" />Large Buttons</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Live Focus</label>
+      <label for="three">
+        <input type="checkbox" id="three" />MMS (Multimedia Messaging)</label>
+        <label for="one">
+        <input type="checkbox" id="one" />Motion & Gesture Control</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Music Player</label>
+      <label for="three">
+        <input type="checkbox" id="three" />Nano Sim</label>
+        <label for="one">
+        <input type="checkbox" id="one" />NFC Connectivity</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Night Mode</label>
+      <label for="three">
+        <input type="checkbox" id="three" />OLED Display</label>
+        <label for="one">
+        <input type="checkbox" id="one" />Palm Recognition</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Polyphonic Ringtones</label>
+      <label for="three">
+        <input type="checkbox" id="three" />Pressure Sensor</label>
+        <label for="one">
+        <input type="checkbox" id="one" />Proximity Sensor</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Push to Talk</label>
+      <label for="three">
+        <input type="checkbox" id="three" />Quad Rear Camera</label>
+        <label for="one">
+        <input type="checkbox" id="one" />QWERTY Keyboard </label>
+      <label for="two">
+        <input type="checkbox" id="two" />Rear Camera</label>
+      <label for="three">
+        <input type="checkbox" id="three" />Retina Display</label>
+        <label for="three">
+        <input type="checkbox" id="three" />Reverse Wireless Charging</label>
+        <label for="one">
+        <input type="checkbox" id="one" />Rotating Camera</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Rugged</label>
+      <label for="three">
+        <input type="checkbox" id="three" />Sim Free</label>
+        <label for="three">
+        <input type="checkbox" id="three" />Slow Motion Video Recording</label>
+        <label for="one">
+        <input type="checkbox" id="one" />Snap-on Cover</label>
+      <label for="two">
+        <input type="checkbox" id="two" />SOS Button</label>
+      <label for="three">
+        <input type="checkbox" id="three" />Speakerphone</label>
+        <label for="three">
+        <input type="checkbox" id="three" />Speech Recognition</label>
+        <label for="one">
+        <input type="checkbox" id="one" />Streaming Video</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Stylus Air Gestures</label>
+      <label for="three">
+        <input type="checkbox" id="three" />Tap to Wake</label>
+        <label for="three">
+        <input type="checkbox" id="three" />Telephoto Lens</label>
+        <label for="one">
+        <input type="checkbox" id="one" />Thermal Sensor</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Time Lapse</label>
+      <label for="three">
+        <input type="checkbox" id="three" />Touch Screen</label>
+        <label for="three">
+        <input type="checkbox" id="three" />Triple Rear Camera</label>
+        <label for="one">
+        <input type="checkbox" id="one" />TTY Compatible</label>
+      <label for="two">
+        <input type="checkbox" id="two" />TV Tuner</label>
+      <label for="three">
+        <input type="checkbox" id="three" />Ultrasonic Fingerprint Sensor</label>
+        <label for="three">
+        <input type="checkbox" id="three" />Ultra Wide-Angle Camera</label>
+        <label for="one">
+        <input type="checkbox" id="one" />Vibration</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Video Calling</label>
+      <label for="three">
+        <input type="checkbox" id="three" />Video Camera</label>
+        <label for="three">
+        <input type="checkbox" id="three" />Voice-Activated Dialing</label>
+        <label for="one">
+        <input type="checkbox" id="one" />Water-Resistant</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Wide-Angle Camera</label>
+      <label for="three">
+        <input type="checkbox" id="three" />Wi-FI Capable</label>
+        <label for="three">
+        <input type="checkbox" id="three" />Wireless PowerShare</label>      
+    </div>
+  </div>
+  </div>
+</div> 
+<!-- /////////////////////////////-->
+   <div class="doublerow">
+  <div class="doublecolumn left" style="">
+    <p>Networks</p>
+  <input type="checkbox" name="vehicle" value="Bike"> 1 & 1
+      <input type="checkbox" name="vehicle" value="Car">1pMobile <br>
+    <input type="checkbox" name="vehicle" value="Bike">360Coms Telecom
+  <input type="checkbox" name="vehicle" value="Car" >A1 Telekom <br>
+    <input type="checkbox" name="vehicle" value="Bike">AAPT
+  <input type="checkbox" name="vehicle" value="Car" > Access Wireless<br>
+      <input type="checkbox" name="vehicle" value="Bike"> ACG Telecoms
+      <input type="checkbox" name="vehicle" value="Car">ACN<br>
+    <input type="checkbox" name="vehicle" value="Bike">ADAC
+  <input type="checkbox" name="vehicle" value="Car" >Adamo<br>
+    <input type="checkbox" name="vehicle" value="Bike">AT&T
+  </div>
+  <div class="doublecolumn right" style="">
+    <p>Extra Networks</p>
+        <div class="multiselect">
+    <div class="selectBox" onclick="showCheckboxesNet()">
+      <select>
+        <option>Select Networks</option>
+      </select>
+      <div class="overSelect"></div>
+    </div>
+    <div id="checkboxesNet">
+      <label for="one">
+        <input type="checkbox" id="one" />First checkbox</label>
+      <label for="two">
+        <input type="checkbox" id="two" />Second checkbox</label>
+      <label for="three">
+        <input type="checkbox" id="three" />Third checkbox</label>
+    </div>
+  </div>
+  </div>
+</div> 
+ <!-- /////////////////////////////-->
+   <div class="doublerow">
+  <div class="doublecolumn left" style="">
+    <p>Manufacturer</p>
+ <input placeholder="Enter Manufacturer" class="input" type = "text" name="resolution"> 
+      
+  </div>
+  <div class="doublecolumn right" style="">
+    <p>Memory card type</p>
+ <input class="input" type = "text" list = "memory-card" name="memory-card"> 
+      <datalist id = "memory-card">
+        <option value="CompactFlash">CompactFlash</option>
+        <option value="eMMC">eMMC</option>
+        <option value="Memory PRO Duo">Memory PRO Duo</option>
+        <option value="Memory Stick Duo">Memory Stick Duo</option>
+        <option value="Memory Stick Micro (M2)">Memory Stick Micro (M2)</option>
+        <option value="Memory Stick PRO">Memory Stick PRO</option>
+        <option value="Memory Stick PRO Duo">Memory Stick PRO Duo</option>
+        <option value="Memory Stick PRO-HG Duo">Memory Stick PRO-HG Duo</option>
+        <option value="MicroSD">MicroSD</option>
+        <option value="MicroSDHC">MicroSDHC</option>
+        <option value="MicroSDXC">MicroSDXC</option>
+        <option value="MiniSD">MiniSD</option>
+        <option value="MiniSDHC">MiniSDHC</option>
+        <option value="MultiMediaCard (MMC)">MultiMediaCard (MMC)</option>
+        <option value="MultiMediaCard Plus(MMC+)">MultiMediaCard Plus(MMC+)</option>
+        <option value="NM Card">NM Card</option>
+        <option value="RS-MMC">RS-MMC</option>
+        <option value="SDHC Card">SDHC Card</option>
+        <option value="SD Memory Card">SD Memory Card</option>
+        <option value="SDXC Card">SDXC Card</option>
+        <option value="Smartmedia Card">Smartmedia Card</option>
+        <option value="TransFlash Card">TransFlash Card</option>
+        <option value="xD-Picture Card">xD-Picture Card</option>
+      </datalist>
+  </div>
+</div> 
+<!-- /////////////////////////////-->
+   <div class="doublerow">
+  <div class="doublecolumn left" style="">
+    <p>Storage Capacity</p>
+ <input class="input" type = "text" list = "Storage Capacity" name="Storage Capacity"> 
+      <datalist id = "Storage Capacity">
+        <option value="64 GB">64 GB</option>
+        <option value="1 TB">1 TB</option>
+        <option value="512 GB">512 GB</option>
+        <option value="256 GB">256 GB</option>
+        <option value="128 GB">128 GB</option>
+        <option value="64 GB">64 GB</option>
+        <option value="32 GB">32 GB</option>
+        <option value="16 GB">16 GB</option>
+        <option value="13.52 GB">13.52 GB</option>
+        <option value="13.31 GB">13.31 GB</option>
+        <option value="13.21 GB">13.21 GB</option>
+        <option value="11.26 GB">11.26 GB</option>
+        <option value="10 GB">10 GB</option>
+        <option value="8 GB">8 GB</option>
+        <option value="5.12 GB">5.12 GB</option>
+        <option value="5.5 GB">5.5 GB</option>
+        <option value="4 GB">4 GB</option>
+        <option value="3.61 GB">3.61 GB</option>
+        <option value="3 GB">3 GB</option>
+        <option value="2.97 GB">2.97 GB</option>
+        <option value="2.56 GB">2.56 GB</option>
+        <option value="2.25 GB">2.25 GB</option>
+        <option value="2 GB">2 GB</option>
+        <option value="1.8 GB">1.8 GB</option>
+        <option value="1.64 GB">1.64 GB</option>
+        <option value="1.24 GB">1.24 GB</option>
+        <option value="1.13 GB">1.13 GB</option>
+        <option value="1.5 GB">1.5 GB</option>
+        <option value="1.4 GB">1.4 GB</option>
+        <option value="1.1 GB">1.1 GB</option>
+        <option value="1 GB">1 GB</option>
+        <option value="800 MP">800 MP</option>
+        <option value="768 MB">768 MB</option>
+        <option value="600 MB">600 MB</option>
+        <option value="576 MB">576 MB</option>
+        <option value="540 MB">540 MB</option>
+        <option value="512 MB">512 MB</option>
+        <option value="500 MB">500 MB</option>
+        <option value="470 MB">470 MB</option>
+        <option value="448 MB">448 MB</option>
+        <option value="430 MB">430 MB</option>
+        <option value="420 MB">420 MB</option>
+        <option value="418 MB">418 MB</option>
+        <option value="410 MB">410 MB</option>
+        <option value="400 MB">400 MB</option>
+        <option value="390 MB">390 MB</option>
+        <option value="384 MB">384 MB</option>
+        <option value="350 MB">350 MB</option>
+        <option value="340 MB">340 MB</option>
+        <option value="330 MB">330 MB</option>
+        <option value="320 MB">320 MB</option>
+        <option value="310 MB">310 MB</option>
+        <option value="300 MB">300 MB</option>
+      </datalist>
+  </div>
+  <div class="doublecolumn right" style="">
+    <p>Model</p>
+ <input class="input" type = "text" list = "Model" name="Model"> 
+      <datalist id = "Model">
+        <option value="Apple iPhone 6s">Apple iPhone 6s</option>
+        <option value="3220">3220</option>
+        <option value="A20">A20</option>
+        <option value="Accellorize 33110W">Accellorize 33110W</option>
+        <option value="Acer Liquid E700">Acer Liquid E700</option>
+        <option value="Acer Liquid Z6">Acer Liquid Z6</option>
+        <option value="Acer M900">Acer M900</option>
+        <option value="AGM M1">AGM M1</option>
+        <option value="AGM X3">AGM X3</option>
+        <option value="AGM X3-JBL">AGM X3-JBL</option>
+        <option value="Alcatel 991">Alcatel 991</option>
+        <option value="Alcatel A3">Alcatel A3</option>
+        <option value="Alcatel A5 LED">Alcatel A5 LED</option>
+        <option value="Alcatel AVALON V">Alcatel AVALON V</option>
+        <option value="Alcatel Cameox">Alcatel Cameox</option>
+        <option value="Alcatel Fierce 4">Alcatel Fierce 4</option>
+        <option value="Alcatel Fierce XL">Alcatel Fierce XL</option>
+        <option value="Alcatel Fire 2 3.5">Alcatel Fire 2 3.5</option>
+        <option value="Alcatel Fire C 2G">Alcatel Fire C 2G</option>
+        <option value="Alcatel Fire C 3G">Alcatel Fire C 3G</option>
+        <option value="Alcatel Fire E">Alcatel Fire E</option>
+        <option value="Alcatel Go Play">Alcatel Go Play</option>
+        <option value="Alcatel IdealXCITE">Alcatel IdealXCITE</option>
+        <option value="Alcatel Idol 4">Alcatel Idol 4</option>
+        <option value="Alcatel Idol 4S">Alcatel Idol 4S</option>
+        <option value="Alcatel Idol 5">Alcatel Idol 5</option>
+        <option value="Alcatel IDOL 5S">Alcatel IDOL 5S</option>
+        <option value="Alcatel Mpop">Alcatel Mpop</option>
+        <option value="Alcatel MyFlip">Alcatel MyFlip</option>
+        <option value="Alactel One Touch Fierce">Alactel One Touch Fierce</option>
+        <option value="Alactel OneTouch Fierce 2">Alactel OneTouch Fierce 2</option>
+        <option value="Alactel OneTouch Idol 3">Alactel OneTouch Idol 3</option>
+        <option value="Alactel OT-355">Alactel OT-355</option>
+        <option value="Alactel OT-602">Alactel OT-602</option>
+        <option value="Alactel Pixi3 3.5">Alactel Pixi3 3.5</option>
+        <option value="Alactel Pixi3 4">Alactel Pixi3 4</option>
+        <option value="Alactel Pixi3 4.5">Alactel Pixi3 4.5</option>
+        <option value="Alactel Pixi 4">Alactel Pixi 4</option>
+        <option value="Alactel Pixi 4 Plus Power">Alactel Pixi 4 Plus Power</option>
+        <option value="Alactel Pixi First">Alactel Pixi First</option>
+        <option value="Alactel Pop 3 5">Alactel Pop 3 5</option>
+        <option value="Alactel Pop 3 5.5">Alactel Pop 3 5.5</option>
+        <option value="Alactel Pop 4">Alactel Pop 4</option>
+        <option value="Alactel Pop 4Plus">Alactel Pop 4Plus</option>
+        <option value="Alactel Pop 4S">Alactel Pop 4S</option>
+        <option value="Alactel Pop C1">Alactel Pop C1</option>
+        <option value="Alactel Pop C3">Alactel Pop C3</option>
+        <option value="Alactel Pop C5">Alactel Pop C5</option>
+        <option value="Alactel Pop C7">Alactel Pop C7</option>
+        <option value="Alactel Pop D1">Alactel Pop D1</option>
+        <option value="Alactel Pop D3">Alactel Pop D3</option>
+        <option value="Alactel Pop D5">Alactel Pop D5</option>
+        <option value="Alactel Pop S3">Alactel Pop S3</option>
+        <option value="Alactel Pop S7">Alactel Pop S7</option>
+        <option value="Alactel Pop S9">Alactel Pop S9</option>
+        <option value="Alactel Pop Star">Alactel Pop Star</option>
+        <option value="Alactel Pop Up">Alactel Pop Up</option>
+        <option value="Alactel Pulsemix">Alactel Pulsemix</option>
+        <option value="Alactel Quickflip">Alactel Quickflip</option>
+        <option value="Alactel Raven">Alactel Raven</option>
+        <option value="Alactel Scribe">Alactel Scribe</option>
+        <option value="Alactel Scribe HD">Alactel Scribe HD</option>
+        <option value="Alactel Star">Alactel Star</option>
+        <option value="Alactel Tetra">Alactel Tetra</option>
+        <option value="Alactel U5">Alactel U5</option>
+        <option value="Alactel X1">Alactel X1</option>
+        <option value="Amazon Fire Phone">Amazon Fire Phone</option>
+        <option value="ANS U140">ANS U140</option>
+        <option value="Apple iPhone (1st Generation)">Apple iPhone (1st Generation)</option>
+        <option value="Apple iPhone 11">Apple iPhone 11</option>
+        <option value="Apple iPhone 11 Pro">Apple iPhone 11 Pro</option>
+        <option value="Apple iPhone 11 Pro Max">Apple iPhone 11 Pro Max</option>
+        <option value="Apple iPhone 3G">Apple iPhone 3G</option>
+        <option value="Apple iPhone 3GS">Apple iPhone 3GS</option>
+          <option value="Apple iPhone 4">Apple iPhone 4</option>
+        <option value="Apple iPhone 4s">Apple iPhone 4s</option>
+        <option value="Apple iPhone 5">Apple iPhone 5</option>
+        <option value="Apple iPhone 5c">Apple iPhone 5c</option>
+        <option value="Apple iPhone 5s">Apple iPhone 5s</option>
+        <option value="Apple iPhone 6">Apple iPhone 6</option>
+        <option value="Apple iPhone 6 Plus">Apple iPhone 6 Plus</option>
+        <option value="Apple iPhone 6s">Apple iPhone 6s</option>
+        <option value="Apple iPhone 6s Plus">Apple iPhone 6s Plus</option>
+        <option value="Apple iPhone 7">Apple iPhone 7</option>
+        <option value="Apple iPhone 7 Plus">Apple iPhone 7 Plus</option>
+        <option value="Apple iPhone 7s">Apple iPhone 7s</option>
+        <option value="Apple iPhone 8">Apple iPhone 8</option>
+        <option value="Apple iPhone 8 Plus">Apple iPhone 8 Plus</option>
+        <option value="Apple iPhone SE">Apple iPhone SE</option>
+        <option value="Apple iPhone X">Apple iPhone X</option>
+        <option value="Apple iPhone XR">Apple iPhone XR</option>
+        <option value="Apple iPhone XS">Apple iPhone XS</option>
+        <option value="Apple iPhone XS Max">Apple iPhone XS Max</option>
+        <option value="Archos 50 Neon">Archos 50 Neon</option>
+        <option value="Archos 50 Platinum">Archos 50 Platinum</option>
+        <option value="ARCHOS Core 57s">ARCHOS Core 57s</option>
+        <option value="ASUS PadFone 2">ASUS PadFone 2</option>
+        <option value="ASUS PadFone S">ASUS PadFone S</option>
+        <option value="ASUS PadFone X">ASUS PadFone X</option>
+        <option value="ASUS ROG Phone">ASUS ROG Phone</option>
+        <option value="ASUS ZenFone">ASUS ZenFone</option>
+        <option value="ASUS ZenFone 2">ASUS ZenFone 2</option>
+        <option value="ASUS ZenFone 3">ASUS ZenFone 3</option>
+        <option value="ASUS ZenFone 4">ASUS ZenFone 4</option>
+        <option value="ASUS ZenFone 5">ASUS ZenFone 5</option>
+        <option value="ASUS ZenFone 6">ASUS ZenFone 6</option>
+        <option value="ASUS ZenFone 6 Edition 30">ASUS ZenFone 6 Edition 30</option>
+        <option value="ASUS ZenFone Max (M1)">ASUS ZenFone Max (M1)</option>
+        <option value="ASUS ZenFone Max Pro">ASUS ZenFone Max Pro</option>
+        <option value="ASUS ZenFone Max Pro (M1)">ASUS ZenFone Max Pro (M1)</option>
+        <option value="Blackberry 8100">Blackberry 8100</option>
+        <option value="Blackberry 8830 World Edition">Blackberry 8830 World Edition</option>
+        <option value="Blackberry Bold 9000">Blackberry Bold 9000</option>
+        <option value="Blackberry Bold 9650">Blackberry Bold 9650</option>
+        <option value="Blackberry Bold 9700">Blackberry Bold 9700</option>
+        <option value="Blackberry Bold 9780">Blackberry Bold 9780</option>
+        <option value="Blackberry Bold 9790">Blackberry Bold 9790</option>
+        <option value="Blackberry Bold 9900">Blackberry Bold 9900</option>
+        <option value="Blackberry Bold 9930">Blackberry Bold 9930</option>
+        <option value="Blackberry Classic">Blackberry Classic</option>
+        <option value="Blackberry Curve 8330">Blackberry Curve 8330</option>
+        <option value="Blackberry Curve 8520">Blackberry Curve 8520</option>
+        <option value="Blackberry Curve 8530">Blackberry Curve 8530</option>
+        <option value="Blackberry Curve 8900">Blackberry Curve 8900</option>
+        <option value="Blackberry Curve 9300">Blackberry Curve 9300</option>
+        <option value="Blackberry Curve 9310">Blackberry Curve 9310</option>
+        <option value="Blackberry Curve 9320">Blackberry Curve 9320</option>
+        <option value="Blackberry Curve 9330">Blackberry Curve 9330</option>
+        <option value="Blackberry Curve 9350">Blackberry Curve 9350</option>
+        <option value="Blackberry Curve 9350">Blackberry Curve 9350</option>
+        <option value="Blackberry Curve 9360">Blackberry Curve 9360</option>
+        <option value="Blackberry Curve 9370">Blackberry Curve 9370</option>
+        <option value="Blackberry Curve 9380">Blackberry Curve 9380</option>
+        <option value="Blackberry DTEK50">Blackberry DTEK50</option>
+        <option value="Blackberry DTEK60">Blackberry DTEK60</option>
+        <option value="Blackberry KEY2">Blackberry KEY2</option>
+        <option value="Blackberry KEY2 LE">Blackberry KEY2 LE</option>
+        <option value="Blackberry KEYone">Blackberry KEYone</option>
+        <option value="Blackberry Leap">Blackberry Leap</option>
+        <option value="Blackberry Passport">Blackberry Passport</option>
+        <option value="Blackberry Pearl 9105">Blackberry Pearl 9105</option>
+        <option value="Blackberry Storm">Blackberry Storm</option>
+        <option value="Blackberry Storm 2">Blackberry Storm 2</option>
+        <option value="Blackberry Z10">Blackberry Z10</option>
+        <option value="Blackberry Z30">Blackberry Z30</option>
+        <option value="Google Pixel">Google Pixel</option>
+        <option value="Google Pixel 2">Google Pixel 2</option>
+        <option value="Google Pixel 2 XL">Google Pixel 2 XL</option>
+        <option value="Google Pixel 3">Google Pixel 3</option>
+        <option value="Google Pixel 3a">Google Pixel 3a</option>
+        <option value="Google Pixel 3a XL">Google Pixel 3a XL</option>
+        <option value="Google Pixel 3 XL">Google Pixel 3 XL</option>
+        <option value="Google Pixel XL">Google Pixel XL</option>
+        <option value="HTC Touch Pro">HTC Touch Pro</option>
+        <option value="HTC Touch Pro2">HTC Touch Pro2</option>
+        <option value="HTC U Play">HTC U Play</option>
+        <option value="HTC U Ultra">HTC U Ultra</option>
+        <option value="HTC Vivid">HTC Vivid</option>
+        <option value="HTC Wildfire">HTC Wildfire</option>
+        <option value="HTC Windows Phone 8S">HTC Windows Phone 8S</option>
+        <option value="HTC Windows Phone 8X">HTC Windows Phone 8X</option>
+        <option value="HUAWEI P smart">HUAWEI P smart</option>
+        <option value="Huawei P Smart+(2019)">Huawei P Smart+(2019)</option>
+        <option value="Huawei P Smart Z">Huawei P Smart Z</option>
+        <option value="Huawei Union">Huawei Union</option>
+        <option value="Huawei Y3">Huawei Y3</option>
+        <option value="Huawei Y5">Huawei Y5</option>
+        <option value="Huawei Y5 (2019)">Huawei Y5 (2019)</option>
+        <option value="Huawei Y6">Huawei Y6</option>
+        <option value="Huawei Y6 (2019)">Huawei Y6 (2019)</option>
+        <option value="Huawei Y625">Huawei Y625</option>
+        <option value="Huawei Y635">Huawei Y635</option>
+        <option value="Huawei Y7 (2018)">Huawei Y7 (2018)</option>
+        <option value="Huawei Y7 (2019)">Huawei Y7 (2019)</option>
+        <option value="Huawei Y7 Pro (2019)">Huawei Y7 Pro (2019)</option>
+        <option value="Huawei Y9 (2019)">Huawei Y9 (2019)</option>
+        <option value="LG X Charge">LG X Charge</option>
+        <option value="LG X Power1">LG X Power1</option>
+        <option value="LG X Power2">LG X Power2</option>
+        <option value="LG Xpression">LG Xpression</option>
+        <option value="LG X venture H700">LG X venture H700</option>
+        <option value="LG Zone 4">LG Zone 4</option>
+        <option value="Microsoft Lumia 640">Microsoft Lumia 640</option>
+        <option value="Microsoft Lumia 640 XL">Microsoft Lumia 640 XL</option>
+        <option value="Microsoft Lumia 650">Microsoft Lumia 650</option>
+        <option value="Microsoft Lumia 950">Microsoft Lumia 950</option>
+        <option value="Microsoft Lumia 950 XL">Microsoft Lumia 950 XL</option>
+        <option value="Nokia N-Gage">Nokia N-Gage</option>
+        <option value="Nokia X2-00">Nokia X2-00</option>
+        <option value="Nokia X3-00">Nokia X3-00</option>
+        <option value="Nokia X3-02">Nokia X3-02</option>
+        <option value="Nokia X6">Nokia X6</option>
+        <option value="Nokia X7">Nokia X7</option>
+        <option value="Samsung Galaxy S7">Samsung Galaxy S7</option>
+        <option value="Samsung Galaxy S7 Active">Samsung Galaxy S7 Active</option>
+        <option value="Samsung Galaxy S7 edge">Samsung Galaxy S7 edge</option>
+        <option value="Samsung Galaxy S8">Samsung Galaxy S8</option>
+        <option value="Samsung Galaxy S8+">Samsung Galaxy S8+</option>
+        <option value="Samsung Galaxy S8 Active">Samsung Galaxy S8 Active</option>
+        <option value="Samsung Galaxy S9">Samsung Galaxy S9</option>
+        <option value="Samsung Galaxy S9+">Samsung Galaxy S9+</option>
+        <option value="Samsung Galaxy A3">Samsung Galaxy A3</option>
+        <option value="Samsung Galaxy A3 (2017)">Samsung Galaxy A3 (2017)</option>
+        <option value="Samsung Galaxy A30">Samsung Galaxy A30</option>
+        <option value="Samsung Galaxy A40">Samsung Galaxy A40</option>
+        <option value="Samsung Galaxy A5">Samsung Galaxy A5</option>
+        <option value="Samsung Galaxy A50">Samsung Galaxy A50</option>
+        <option value="Samsung Galaxy A6">Samsung Galaxy A6</option>
+        <option value="Samsung Galaxy A7">Samsung Galaxy A7</option>
+        <option value="Samsung Galaxy A7(2018)">Samsung Galaxy A7(2018)</option>
+        <option value="Samsung Galaxy A8">Samsung Galaxy A8</option>
+        <option value="Samsung Galaxy A8+">Samsung Galaxy A8+</option>
+        <option value="Samsung Galaxy A8s">Samsung Galaxy A8s</option>
+        <option value="Samsung Galaxy A9">Samsung Galaxy A9</option>
+        <option value="Samsung Galaxy Note5">Samsung Galaxy Note5</option>
+        <option value="Samsung Galaxy Note8">Samsung Galaxy Note8</option>
+        <option value="Samsung Galaxy Note9">Samsung Galaxy Note9</option>
+        <option value="Samsung Galaxy Note Edge">Samsung Galaxy Note Edge</option>
+      </datalist>
+  </div>
+</div> 
+<!-- /////////////////////////////-->
+   <div class="doublerow">
+  <div class="doublecolumn left" style="">
+    <p>Screen Size</p>
+ <input class="input" type = "text" list = "Screen Size" name="Screen Size"> 
+      <datalist id = "Screen Size">
+        <option value="4.7 in">4.7 in</option>
+        <option value="5.5 in">5.5 in</option>
+        <option value="1 in">1 in</option>
+        <option value="1.4 in">1.4 in</option>
+        <option value="1.5 in">1.5 in</option>
+        <option value="1.7 in">1.7 in</option>
+        <option value="1.8 in">1.8 in</option>
+        <option value="1.9 in">1.9 in</option>
+        <option value="2 in">2 in</option>
+        <option value="2.1 in">2.1 in</option>
+        <option value="2.2 in">2.2 in</option>
+        <option value="2.3 in">2.3 in</option>
+        <option value="2.4 in">2.4 in</option>
+        <option value="2.5 in">2.5 in</option>
+        <option value="2.6 in">2.6 in</option>
+        <option value="2.7 in">2.7 in</option>
+        <option value="2.8 in">2.8 in</option>
+        <option value="2.9 in">2.9 in</option>
+        <option value="3 in">3 in</option>
+        <option value="3.1 in">3.1 in</option>
+        <option value="3.2 in">3.2 in</option>
+        <option value="3.3 in">3.3 in</option>
+        <option value="3.4 in">3.4 in</option>
+        <option value="3.5 in">3.5 in</option>
+        <option value="3.6 in">3.6 in</option>
+        <option value="3.7 in">3.7 in</option>
+        <option value="3.8 in">3.8 in</option>
+        <option value="3.9 in">3.9 in</option>
+        <option value="4 in">4 in</option>
+        <option value="4.1 in">4.1 in</option>
+        <option value="4.2 in">4.2 in</option>
+        <option value="4.3 in">4.3 in</option>
+        <option value="4.4 in">4.4 in</option>
+        <option value="4.5 in">4.5 in</option>
+        <option value="4.6 in">4.6 in</option>
+        <option value="4.7 in">4.7 in</option>
+        <option value="4.8 in">4.8 in</option>
+        <option value="4.9 in">4.9 in</option>
+        <option value="5 in">5 in</option>
+        <option value="5.1 in">5.1 in</option>
+        <option value="5.2 in">5.2 in</option>
+        <option value="5.3 in">5.3 in</option>
+        <option value="5.4 in">5.4 in</option>
+        <option value="5.5 in">5.5 in</option>
+        <option value="5.6 in">5.6 in</option>
+        <option value="5.7 in">5.7 in</option>
+        <option value="5.8 in">5.8 in</option>
+        <option value="5.9 in">5.9 in</option>
+        <option value="6 in">6 in</option>
+        <option value="6.1 in">6.1 in</option>
+        <option value="6.2 in">6.2 in</option>
+        <option value="6.3 in">6.3 in</option>
+        <option value="6.4 in">6.4 in</option>
+        <option value="6.5 in">6.5 in</option>
+        <option value="6.6 in">6.6 in</option>
+        <option value="6.7 in">6.7 in</option>
+        <option value="6.8 in">6.8 in</option>
+        <option value="6.9 in">6.9 in</option>
+        <option value="7.0 in">7.0 in</option>
+        <option value="7.2 in">7.2 in</option>
+        <option value="7.3 in">7.3 in</option>
+        <option value="7.8 in">7.8 in</option>
+        <option value="8 in">8 in </option>
+      </datalist>
+  </div>
+  <div class="doublecolumn right" style="">
+    <p>Operating System</p>
+ <input class="input" type = "text" list = "Operating System" name="Operating System"> 
+      <datalist id = "Operating System">
+        <option value="iOS">iOS</option>
+        <option value="Aliyun OS">Aliyun OS</option>
+        <option value="Adroid">Adroid</option>
+        <option value="Asha Platform">Asha Platform</option>
+        <option value="BADA">BADA</option>
+        <option value="BlackBerry 10">BlackBerry 10</option>
+        <option value="BlackBerry 3-7">BlackBerry 3-7</option>
+        <option value="BlackBerry OS">BlackBerry OS</option>
+        <option value="Brew">Brew</option>
+        <option value="Color OS">Color OS</option>
+        <option value="Danger OS">Danger OS</option>
+        <option value="EMUI">EMUI</option>
+        <option value="Firefox OS">Firefox OS</option>
+        <option value="Fire OS">Fire OS</option>
+        <option value="Funtouch OS">Funtouch OS</option>
+        <option value="GridOS">GridOS</option>
+        <option value="HP/Palm webOS">HP/Palm webOS</option>
+        <option value="iOS">iOS</option>
+        <option value="Linux">Linux</option>
+        <option value="Maemo">Maemo</option>
+        <option value="MIUI">MIUI</option>
+        <option value="MIUI 10">MIUI 10</option>
+        <option value="Nokia X">Nokia X</option>
+        <option value="OxygenOS">OxygenOS</option>
+        <option value="PrivatOS">PrivatOS</option>
+        <option value="RIM">RIM</option>
+        <option value="S30+">S30+</option>
+        <option value="S40">S40</option>
+        <option value="Sailfish OS">Sailfish OS</option>
+        <option value="Symbian">Symbian</option>
+        <option value="Water OS">Water OS</option>
+        <option value="WebOS">WebOS</option>
+        <option value="Window Mobile">Window Mobile</option>
+        <option value="Window Phone 10">Window Phone 10</option>
+        <option value="Window Phone 7">Window Phone 7</option>
+        <option value="Window Phone 7.5">Window Phone 7.5</option>
+        <option value="Window Phone 8">Window Phone 8</option>
+          <option value="Window Phone 8.1">Window Phone 8.1</option>
+      </datalist>
+  </div>
+</div> 
+<!-- /////////////////////////////-->
+   <div class="doublerow">
+  <div class="doublecolumn left" style="">
+    <p>Processor</p>
+ <input class="input" type = "text" list = "Processor" name="Processor"> 
+      <datalist id = "Processor">
+        <option value="Single Core">Single Core</option>
+        <option value="Dual Core">Dual Core</option>
+        <option value="Quad Core">Quad Core</option>
+        <option value="Hexa Core">Hexa Core</option>
+        <option value="Quad+Quad Core">Quad+Quad Core</option>
+        <option value="Octa Core">Octa Core</option>
+        <option value="Deca Core">Deca Core</option>
+      </datalist>
+  </div>
+  <div class="doublecolumn right" style="">
+    <p>Model Number</p>
+ <input placeholder="Select/Enter Model number" class="input" type = "text" list = ">Model-Number" name=">Model-Number"> 
+      <datalist id = ">Model-Number">
+        <option value="440G">440G</option>
+        <option value="5049W">5049W</option>
+        <option value="5049Z">5049Z</option>
+        <option value="5054N">5054N</option>
+        <option value="9505A">9505A</option>
+        <option value="9670">9670</option>
+        <option value="A1203 (GSM)">A1203 (GSM)</option>
+        <option value="A1241 (GSM)">A1241 (GSM)</option>
+        <option value="A1303 (GSM)">A1303 (GSM)</option>
+        <option value="A1324 (China)">A1324 (China)</option>
+      </datalist>
+  </div>
+</div> 
+<!-- /////////////////////////////-->
+   <div class="doublerow">
+  <div class="doublecolumn left" style="">
+    <p>RAM</p>
+ <input class="input" type = "text" list = "RAM" name="RAM"> 
+      <datalist id = "RAM">
+        <option value="1 GB">1 GB</option>
+        <option value="2 GB">2 GB</option>
+        <option value="3 GB">3 GB</option>
+        <option value="4 GB">4 GB</option>
+        <option value="5 GB">5 GB</option>
+        <option value="6 GB">6 GB</option>
+        <option value="7 GB">7 GB</option>
+        <option value="8 GB">8 GB</option>
+        <option value="10 GB">10 GB</option>
+        <option value="12 GB">12 GB</option>
+      </datalist>
+  </div>
+  <div class="doublecolumn right" style="">
+    <p>Color</p>
+ <input class="input" type = "text" list = "Color" name="Color"> 
+      <datalist id = "Color">
+        <option value="Beige">Beige</option>
+        <option value="Black">Black</option>
+        <option value="Blue">Blue</option>
+        <option value="Brown">Brown</option>
+        <option value="Clear">Clear</option>
+        <option value="Gold">Gold</option>
+        <option value="Gray">Gray</option>
+        <option value="Green">Green</option>
+        <option value="Multicolor">Multicolor</option>
+        <option value="Orange">Orange</option>
+        <option value="Pink">Pink</option>
+        <option value="Purple">Purple</option>
+        <option value="Red">Red</option>
+        <option value="Silver">Silver</option>
+        <option value="White">White</option>
+        <option value="Yellow">Yellow</option>
+      </datalist>
+  </div>
+</div> 
+  <!-- /////////////////////////////-->
+   <div class="doublerow">
+  <div class="doublecolumn left" style="">
+    <p>Cellular brand</p>
+ <input class="input" type = "text"  name="cellularbrand"> 
+ 
+  </div>
+  <div class="doublecolumn right" style="">
+    <p>Warranty</p>
+<input class="input" type = "text" list = ">Warranty" name="Warranty"> 
+      <datalist id = ">Warranty">
+        <option value="None">None</option>
+        <option value="1 month">1 month</option>
+        <option value="3 months">3 months</option>
+        <option value="6 months">6 months</option>
+        <option value="9 months">9 months</option>
+        <option value="1 year">1 year</option>
+        <option value="2 years">2 years</option>
+        <option value="3 years">3 years</option>
+        <option value="4 years">4 years</option>
+        <option value="5 years">5 years</option>
+        <option value="10 years">10 years</option>
+        <option value="Lifetime">Lifetime</option>
+        <option value="Other:see item description">Other:see item description</option>
+      </datalist>
+  </div>
+</div>    
+<!-- /////////////////////////////-->  
+<div class="textArea">
+ <p>Item description <span class="required">*</span></p>   
+   <textarea placeholder="Type item description here" rows="50" name="comment[text]" id="comment_text" cols="80"  autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"></textarea>   
+</div>
+<!-- /////////////////////////////-->
+   <div class="doublerow">
+  <div class="doublecolumn left" style="">
+    <p>Price</p>
+ <input class="input" type = "text"  name="cellularbrand"> 
+ 
+  </div>
+  <div class="doublecolumn right" style="">
+    <p>Quantity</p>
+<input class="input" type = "number"  name="Quantity"> 
+ <input style="width: 60px;" placeholder="Units" class="input" type = "text" list = "Units" name="Units"> 
+      <datalist id = "Units">
+        <option value="Single">Single</option>
+        <option value="Pairs">Pairs</option>
+        <option value="Packs">Packs</option>
+          <option value="Sets">Sets</option>
+      </datalist>
+  </div>
+</div>
+  <!-- /////////////////////////////-->
+   <div class="doublerow">
+       <p style="text-align: center">Payment options</p>
+  <div class="doublecolumn left" style="">
+    <p> Paypal</p>
+ <input placeholder="Insert paypal email" class="input" type = "text"  name="cellularbrand"> 
+ 
+  </div>
+  <div class="doublecolumn right" style="">
+    <p>Wipay</p>
+<input class="input" type = "text"  name="Quantity"> 
+  </div>
+</div>
+  <!-- /////////////////////////////-->
+   <div class="doublerow">
+       <p style="text-align: center">Return options</p>
+  <div class="doublecolumn left" style="">
+  <input type="checkbox" name="returns" value="Domestic "> Domestic returns accepted
+  </div>
+  <div class="doublecolumn right" style="">
+  <input type="checkbox" name="returns" value="International"> International returns accepted
+  </div>
+</div>
+  <!-- /////////////////////////////-->
+   <div class="doublerow">
+       <p style="text-align: center">Shipping</p>
+  <div class="doublecolumn left" style="">
+      <p>Shipping cost</p>
+       <input class="input" type = "text"  name="cellularbrand"> 
+  <input type="checkbox" name="returns" value="Free "> Free
+  </div>
+  <div class="doublecolumn right" style="">
+      <p>Handling Time</p>
+    <select class="input">
+        <option value="Same business day">Same business day</option>
+        <option value="1 business day">1 business day</option>
+        <option value="2 business days">2 business days</option>
+        <option value="3 business days">3 business days</option>
+        <option value="4 business days">4 business days</option>
+        <option value="5 business days">5 business days</option>
+        <option value="10 business days">10 business days</option>
+        <option value="15 business days">15 business days</option>
+        <option value="20 business days">20 business days</option>
+        <option value="30 business days">30 business days</option>
+        </select>
+  </div>
+</div>
+  <!-- /////////////////////////////-->
+   <div class="doublerow">
+  <div class="doublecolumn left" style="">
+      <p>Item location</p>
+       <input class="input" type = "text"  name="cellularbrand"> 
+  </div>
+  <div class="doublecolumn right" style="">
+      <p>Fees</p>
+  <p>0.00 jmb</p>
+  </div>
+</div>
+   <input class="submit" type="button" onclick="myFunction()" value="Submit form"> 
+    </form>
+
+     <!-- footer begin -->
+    <div class="rowFooter">
+  <div class="columnFooter">
+         <h3>SERVICE</h3>
+      <a href="#">Online Help</a><br/><br/>
+      <button class="button" data-modal="modalOne">Contact Us</button><br/><br/>
+      <a  href="#">Order Status</a><br/><br/>
+      <a  href="#">Change location</a><br/><br/>
+     <a href="#">Freguently ask question</a>
+  </div>
+  <div class="columnFooter" >
+         <h3>Policies</h3>
+      <a href="#">Terms of Use</a><br/><br/>
+      <a href="#">Privacy Policy</a><br/><br/>
+      <a href="#">Refund Policy</a><br/><br/>
+      <a href="#">Billing System</a>
+  </div>
+  <div class="columnFooter" id="columnFooter3" >
+      <h3>Get to know Us</h3>
+      <a href="#">About Us</a><br/><br/>
+      <a href="#">How to Sell on Emerc</a><br/><br/>
+      <a href="#">Our payment Option</a>
+  </div>
+	<div class="bottomcontainer">
+				<div class="">
+					<div id="logos" > 
+                    <a id="facebook" href="#" style="padding: 5px;padding-right: 5px;"><img src="pictures/icons8-facebook-64.png"   /></a>
+                    <a id="instagram" href="#" style="padding: 5px;"><img src="pictures/icons8-instagram-48.png"   /></a>
+                        <p class="pull-left">© 2019 Emerc. All rights reserved.</p>
+                    </div>
+				</div>
+           </div>
+</div>
+</body>
+    <script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+         <!-- jvascript for popup contact us -->
+    <script>
+      var modalBtns = [...document.querySelectorAll(".button")];
+      modalBtns.forEach(function(btn){
+        btn.onclick = function() {
+          var modal = btn.getAttribute('data-modal');
+          document.getElementById(modal).style.display = "block";
+        }
+      });
+      
+      var closeBtns = [...document.querySelectorAll(".close")];
+      closeBtns.forEach(function(btn){
+        btn.onclick = function() {
+          var modal = btn.closest('.modal');
+          modal.style.display = "none";
+        }
+      });
+      
+      window.onclick = function(event) {
+        if (event.target.className === "modal") {
+          event.target.style.display = "none";
+        }
+      }
+    </script>
+     <!--+disable control+u-->
+    <script type="text/javascript">
+    function mousehandler(e) {
+        var myevent = (isNS) ? e : event;
+        var eventbutton = (isNS) ? myevent.which : myevent.button;
+        if ((eventbutton == 2) || (eventbutton == 3)) return false;
+    }
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+    function disableCtrlKeyCombination(e) {
+        var forbiddenKeys = new Array("a", "s", "c", "x","u");
+        var key;
+        var isCtrl;
+        if (window.event) {
+            key = window.event.keyCode;
+            //IE
+            if (window.event.ctrlKey)
+                isCtrl = true;
+            else
+                isCtrl = false;
+        }
+        else {
+            key = e.which;
+            //firefox
+            if (e.ctrlKey)
+                isCtrl = true;
+            else
+                isCtrl = false;
+        }
+        if (isCtrl) {
+            for (i = 0; i < forbiddenKeys.length; i++) {
+                //case-insensitive comparation
+                if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+</script>
+ <!--+ dropdown check boxes-->
+  <script type="text/javascript">
+
+var expanded = false;
+
+function showCheckboxes() {
+  var checkboxes = document.getElementById("checkboxes");
+  if (!expanded) {
+    checkboxes.style.display = "block";
+    expanded = true;
+  } else {
+    checkboxes.style.display = "none";
+    expanded = false;
+  }
+}
+    </script>
+
+ <!--+ dropdown check boxes-->
+  <script type="text/javascript">
+
+var expanded = false;
+
+function showCheckboxesNet() {
+  var checkboxes = document.getElementById("checkboxesNet");
+  if (!expanded) {
+    checkboxes.style.display = "block";
+    expanded = true;
+  } else {
+    checkboxes.style.display = "none";
+    expanded = false;
+  }
+}
+    </script>
+    
+</html>
