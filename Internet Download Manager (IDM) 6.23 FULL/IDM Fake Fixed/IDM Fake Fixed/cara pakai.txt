@@ -1,0 +1,14 @@
+2. Exctract File Rar yang telah didownload
+3. Tutup Program IDM terlebih dahulu
+4. Jalankan Reset (Fixed).exe dengan cara klik kanan Run as Adminstrator
+5. Klik tab Trial reset
+6. Uncheck Automatically lalu klik Reset the IDM trial now
+
+idm trial reset
+
+7. Akan muncul pemberitahuan bahwa IDM akan menjadi trial selama 30 hari.
+8. lalu klik tab Register dan klik Register IDM now, masukan nama kamu lalu klik ok.
+
+idm trial reset nama
+
+9. selesai, selamat berinternet ria tanpa ada notifikasi Fake serial number
