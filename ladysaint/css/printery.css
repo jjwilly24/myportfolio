@@ -1,0 +1,879 @@
+body {
+background-color:white; 
+  margin: auto;
+    font-family:sans-serif;
+    font-size: 1.2em;
+}
+
+#hr1{  
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+
+#delivery{
+    width: 30px;
+    height: 30px;
+}
+.freeDelivery{
+color: #FC5C7B;
+font-size: 1em;
+}
+
+#choices {
+
+  /* styling */
+
+
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+/* arrows */
+
+#choices {
+  background-image:
+    linear-gradient(45deg, transparent 50%, blue 50%),
+    linear-gradient(135deg, blue 50%, transparent 50%),
+    linear-gradient(to right, white, white);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+.s003 {
+  min-height: 30vh;
+   max-width:1020px;
+     width: 100%;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-pack: center;
+       justify-content: center;
+   -ms-flex-align: center;
+       align-items: center;
+   font-family: 'Poppins', sans-serif;
+   background-color: transparent;
+   background-size: cover;
+   margin: auto;
+   padding: 15px;
+ }
+ 
+
+.notification {
+  padding: 2px 4px;
+  position: relative; 
+  display: inline-block;
+}
+
+.notification .badge {
+  height: 0px;
+  position: absolute;
+  top: -10px;
+  right: 1px;
+  padding: 1px 2px;
+  border-radius: 50%;
+  color: black;
+}
+li {
+  display: inline;
+}
+.ItemRow,.ItemColumn {
+  box-sizing: border-box;
+}
+
+.ItemColumn {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  overflow: hidden;
+ /*height: 335px;*/
+}
+.ImageItem{max-width:240px; width: 100%;height: 240px;margin-left: auto;margin-right: auto;display: block;}
+.ItemColumn a {text-decoration: none;text-align: center}
+.ItemColumn a:hover{text-decoration:underline;}
+.productTitle{
+  padding-top: 10px;
+  font-size: medium; width:95%;display:inline-block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;
+}
+#productCol{
+  margin-bottom: 10px;
+}
+.ItemRow {margin: 0 -5px;
+  width: 80%;margin-left: auto;margin-right: auto;}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 1024px) {
+  .row {
+width: 100%;}
+}
+
+@media screen and (max-width: 768px) {
+    .ItemColumn {
+  float: left;
+  width: 33.3%;
+  padding: 0 10px;
+}
+}
+@media screen and (max-width: 600px) {
+  .ItemColumn {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+  border:0.1px solid #FC5C7B;
+}
+.list{
+  text-align: center;
+   padding: 10px;
+   cursor: pointer;
+   
+}
+.list a{
+   font-size: 1em;
+   border: 1px #FC5C7B;
+   border-radius: 5px;
+   padding: 5px;
+   background-color: #FC5C7B;
+   text-decoration: none;
+   color: #000;
+}
+/*buy and add to cart button*/
+.ItemBtn {
+  padding: 3px 7px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: #FC5C7B;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 9px #999;
+}
+
+.ItemBtn:hover {
+  background-color: dodgerblue;
+}
+
+.ItemBtn:active {
+  background-color: dodgerblue;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/*logo*/
+.print{
+  padding-left: 30px;
+  text-align:left;}
+
+/*header menu*/
+nav {
+	margin: 27px auto 0;
+	position: relative;
+	max-width: 430px;
+    width:100%;
+	height: 50px;
+	background-color: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+    width: 100%;
+	max-width: 100px;
+}
+a:nth-child(2) {
+    width:100%;
+	max-width: 110px;
+}
+a:nth-child(3) {
+    width:100%;
+	max-width: 100px;
+}
+a:nth-child(4) {
+    width:100%;
+	max-width: 120px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+    width:100%;
+	max-width: 100px;
+	left: 0;
+	background-color: #FC5C7B;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+    width: 100%;
+	max-width: 110px;
+	left: 100px;
+	background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+    width: 100%;
+	max-width: 100px;
+	left: 210px;
+	background-color: #3498db;
+}
+
+nav .start-contact, a:nth-child(4):hover~.animation {
+    width: 100%;
+	max-width: 120px;
+	left: 310px;
+	background-color: #e67e22;
+}
+
+span {
+    color: #2BD6B4;
+}
+
+/*slideshow*/
+
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  background: transparent;
+  border: 1px solid #e1e1e1;
+  font: 12px/1.2 "Oswald", sans-serif;
+  letter-spacing: 0.4em;
+  text-align: center;
+  text-indent: 2px;
+  text-transform: uppercase;
+  transition: color 0.1s linear 0.05s;
+}
+.btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #e1e1e1;
+  z-index: 1;
+  opacity: 0;
+  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
+}
+.btn::after {
+  transition: border 0.1s linear 0.05s;
+}
+.btn .btn-inner {
+  position: relative;
+  z-index: 2;
+}
+.btn:hover {
+  color: #373737;
+  transition: color 0.1s linear 0s;
+}
+.btn:hover::before {
+  top: 0;
+  height: 100%;
+  opacity: 1;
+  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
+}
+.btn:hover::after {
+  border-color: #373737;
+  transition: border 0.1s linear 0s;
+}
+.slideshow {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  z-index: 1;
+}
+.slideshow .slideshow-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.slideshow .slides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.slideshow .slide {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.slideshow .slide.is-active {
+  display: block;
+}
+.slideshow .slide.is-loaded {
+  opacity: 1;
+}
+.slideshow .slide .caption {
+  padding: 0 100px;
+}
+.slideshow .slide .image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  z-index: 1;
+  background-size: cover;
+  image-rendering: optimizeQuality;
+}
+.slideshow .slide .image-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.slideshow .slide .image {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.slideshow .slide-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slideshow .slide .title {
+  margin: 0 auto 15px;
+  max-width: 1000px;
+  font: 300 50px/1.2 "Oswald", sans-serif;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+}
+.slideshow .slide .text {
+  margin: 0 auto;
+  max-width: 1000px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.slideshow .slide .btn {
+    display: none;
+  margin: 0px 0 0;
+  border-color: #fff;
+}
+.slideshow .slide .btn::before {
+  background: #fff;
+}
+.slideshow .pagination {
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  cursor: default;
+  z-index: 2;
+  text-align: center;
+}
+.slideshow .pagination .item {
+  display: inline-block;
+  padding: 15px 5px;
+  position: relative;
+  width: 46px;
+  height: 32px;
+  cursor: pointer;
+  text-indent: -999em;
+  z-index: 1;
+}
+.slideshow .pagination .item + .page {
+  margin-left: -2px;
+}
+.slideshow .pagination .item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  width: 36px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  transition: background 0.2s ease;
+}
+.slideshow .pagination .item::after {
+  width: 0;
+  background: #fff;
+  z-index: 2;
+  transition: width 0.2s ease;
+}
+.slideshow .pagination .item:hover::before, .slideshow .pagination .item.is-active::before {
+  background-color: #fff;
+}
+.slideshow .arrows .arrow {
+  margin: -33px 0 0;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  z-index: 3;
+}
+.slideshow .arrows .prev {
+  left: 30px;
+}
+.slideshow .arrows .prev:hover .svg {
+  left: -10px;
+}
+.slideshow .arrows .next {
+  right: 30px;
+}
+.slideshow .arrows .next:hover .svg {
+  left: 10px;
+  left: 10px;
+}
+.slideshow .arrows .svg {
+  position: relative;
+  left: 0;
+  width: 14px;
+  height: 26px;
+  fill: #fff;
+  transition: left 0.2s ease;
+}
+/*products*/
+.Section1{
+  padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1420px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding-bottom: 10px;
+    display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+.reponsive{margin-bottom: 65px}
+
+.col h4,p{
+    text-align: center;
+    color:#4F4C4C;
+}
+.col {
+  display: table-cell;
+  padding: 16px;
+}
+
+.section2{
+  
+    width: 100%;
+    height: 25vh;
+   background-color: #000;
+   color: #bfbfbf;
+   background-image: url(../img/LADY\ \(backcover\).jpg);
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center;
+   position: relative;
+}
+.section2 p{
+    font-size: 1.3em;
+    color: #A41A1A;
+    letter-spacing: .25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+/*display a portion of a image*/
+#sideImage {
+  position: relative;
+    width: 10%;
+}
+#clip {
+  position: absolute;
+  clip: rect(0, 150px, 320px, 0);
+  /* clip: shape(top, right, bottom, left); NB 'rect' is the only available option */
+}
+
+/*footer*/
+/* Create three equal columns that floats next to each other */
+.icon{
+    width: 35px;
+    height: 35px;
+    
+}
+.logo{
+    width: 150px;
+}
+.columnFooter,rowFooter {
+  box-sizing: border-box;
+}
+.rowFooter{
+width: 100%;
+background-color: #7A7878;
+}
+/* Create three equal;
+columns that floats next to each other */
+.columnFooter {
+  background-color: #7A7878;
+  text-align: center;
+  padding: 10px;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+.columnFooter p{
+    background-color: #595655;
+     color: #F3F0F0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+     background: none;
+}
+/* Clear floats after the columns */
+.rowFooter:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columnFooter {
+    width: 100%;
+  }
+  .main-content{
+    display: none;
+  }
+    
+}
+/*remove sde image*/
+@media screen and (max-width: 1400px) {
+    #sideImage{display: none}
+}
+@media screen and (max-width: 998px) {
+.print{
+    text-align: center;
+    padding-left: 0px;
+    margin-left: auto;margin-right: auto;display: block;
+    width: 200px;
+}
+
+}
+.aboutEmerc{font-family: 'Source Sans Pro', sans-serif;color:#53A9D6}
+
+
+.Decription{ width: 100%;
+                max-width: 1250px;
+                margin-left: auto;
+                margin-right: auto;
+              
+}
+.Decription p{  color: #0D0E0E;}
+
+@media screen and  (max-width: 428px) {
+nav {
+	max-width: 370px;
+    width:100%;
+}
+   a:nth-child(1) {
+    width: 100%;
+	max-width: 80px;
+}
+a:nth-child(2) {
+    width:100%;
+	max-width: 90px;
+}
+a:nth-child(3) {
+    width:100%;
+	max-width: 80px;
+}
+a:nth-child(4) {
+    width:100%;
+	max-width: 100px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+    width:100%;
+	max-width: 80px;
+	left: 0;
+	background-color: #FC5C7B;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+    width: 100%;
+	max-width: 90px;
+	left: 80px;
+	background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+    width: 100%;
+	max-width: 80px;
+	left: 170px;
+	background-color: #3498db;
+}
+
+nav .start-contact, a:nth-child(4):hover~.animation {
+    width: 100%;
+	max-width: 100px;
+	left: 250px;
+	background-color: #e67e22;
+}
+}
+@media screen and (max-width: 370px) {
+    .col{
+        width: 100%;
+        display: block;
+    }
+    
+   a:nth-child(1) {
+    width: 100%;
+	max-width: 70px;
+}
+a:nth-child(2) {
+    width:100%;
+	max-width: 80px;
+}
+a:nth-child(3) {
+    width:100%;
+	max-width: 80px;
+}
+a:nth-child(4) {
+    width:100%;
+	max-width: 90px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+    width:100%;
+	max-width: 70px;
+	left: 0;
+	background-color: #FC5C7B;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+    width: 100%;
+	max-width: 80px;
+	left: 70px;
+	background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+    width: 100%;
+	max-width: 80px;
+	left: 150px;
+	background-color: #3498db;
+}
+
+nav .start-contact, a:nth-child(4):hover~.animation {
+    width: 100%;
+	max-width: 90px;
+	left: 230px;
+	background-color: #e67e22;
+}
+}
+/*About us*/
+.section3 p{
+    font-size: 1.2em;
+    color: #1B1919;
+}
+
+#FacebookBanner{
+   
+    width: 100%;
+    max-height: 400px;
+    height: 100%;
+}
+.section4{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    width: 100%;
+    font-size: 1.3em;
+}
+.section4 p{
+    font-size: 1em;
+    color: black;
+}
+/* Create two equal columns that floats next to each other */
+.columns {
+  position: relative;
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.rows:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.teamDiv{
+width: 80%;
+}
+.teamDiv p{
+  letter-spacing: 0.2em;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+    .section6{margin-top: 20px}
+    .teamDiv{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #wallp{
+   display: none;
+}
+}
+#rows{
+    max-width: 1220px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#ourTeam{
+    max-width: 600px;
+    width: 100%;
+    float: right;
+}
+#wallpaper{
+    border-radius: 50%;
+    max-width: 400px;
+    width: 100%;
+    float: left;
+}
+/*services*/
+.square{
+    background-color: white;
+    max-width: 300px;
+    width: 100%;
+    max-height: 340px;
+    height: 100%;
+   margin-left: auto;
+    margin-right: auto;
+}
+/*photogrid*/
+.rowimage {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.columnimage {
+  -ms-flex: 50%; /* IE10 */
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+  
+}
+
+.columnimage  img {
+  margin-top: 8px;
+  vertical-align: middle;
+max-width: 350px;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .columnimage  {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columnimage  {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  #bookmark  {
+    display: none;
+  }
+    .columnimage{text-align: center}
+}
+@media screen and (max-width: 1024px) {
+
+    .columnimage{text-align: center}
+}
