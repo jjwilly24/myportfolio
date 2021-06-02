@@ -193,7 +193,7 @@ width: 100%;}
 /*logo*/
 .print{
   padding-left: 30px;
-  text-align:left;}
+  float: left;}
 
 /*header menu*/
 nav {
@@ -618,6 +618,7 @@ columns that floats next to each other */
 }
 @media screen and (max-width: 998px) {
 .print{
+    float: none;
     text-align: center;
     padding-left: 0px;
     margin-left: auto;margin-right: auto;display: block;
